@@ -22,8 +22,6 @@ The course has been organized into a series of modules, each of which covers an 
 
 Most modules also have programming excercises associated with them which you should complete (on your own).  Solutions and video recordings of the solution being developed are also posted - however I strongly recommend you try each excercise on your own before watching me solve it!  And of course - the way I solve it may not be the only correct way to do so!
 
-Each module is listed as being at either the *beginner*, *intermediate*, or *advanced* level.  If you have no prior programming experience, you'll want to work on the *beginner* modules in detail - but if you already have programming experience those module may be "skimmed".  They cover some important differences between Python and other languages like C++ though - so at the very least you should scan through the slides.
-
 [Please click here for a listing of all the modules](outline.html)
 
 I **strongly** recommend you work through each module in order - programming is not the type of thing that you can skip around with...

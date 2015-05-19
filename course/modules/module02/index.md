@@ -1,7 +1,7 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
 ## Module 02 - Strings and Input
-
+[back to outline](../../outline.html)
 ### Summary
 This module will show you to work with strings and user input.  **Note**, I am skipping over section 2.2 - we'll do this in the next module.
 

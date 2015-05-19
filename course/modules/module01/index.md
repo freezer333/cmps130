@@ -1,7 +1,7 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
 ## Module 01 - Introduction to Computation
-
+[back to outline](../../outline.html)
 ### Summary
 This module will show you how to set up your machine so you can write and run Python code.  You'll learn about the very basic parts of a Python program, and a bit about the various versions of the language.  
 

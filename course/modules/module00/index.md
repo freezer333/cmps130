@@ -1,7 +1,7 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
 ## Module 0 - Introduction to Computation
-
+[back to outline](../../outline.html)
 ### Summary
 This module will give you a general overview of what computation actually is, how programming works, and what you can do with it.  For those of you who've programmed before, you'll already know all this - but its a great place to start if you are new to programming.
 
