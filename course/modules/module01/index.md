@@ -23,4 +23,5 @@ Pages 7-13
 
 ### Material
 - [Download Python](https://www.python.org/downloads/) - ** please make sure you download Python version 3!** for the correct operating system.
-- [A first Python program](hello.py)
+- [Help using the Windows Command Prompt](http://www.7tutorials.com/command-prompt-how-use-basic-commands) - you'll need to use the command prompt to run your programs!!!
+- [Help using the Mac OS X Terminal](https://www.youtube.com/watch?v=-Vl4rpZVA6I) - you'll need to use the terminal to run your programs on you Mac!

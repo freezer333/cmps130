@@ -31,3 +31,14 @@ I **strongly** recommend you work through each module in order - programming is 
 ## Getting the programming examples
 All the programming example code is linked to from this website, however if you want to download them all in one shot, the entire course website is available on github.
 
+If you have never installed git, please consult the documentation found [here](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+Once properly installed, just open the command prompt or terminal and enter the following command from the directory you want this course material to be downloaded to:
+
+```
+git clone https://github.com/freezer333/cmps130.git
+```
+Within the `course` directory, you'll find this entire website, along with all source code within each of the module directories.  You should periodically check for changes using the `pull` command.
+
+Alternatively, if you don't know git and don't really care to, you can download Github's very easy to use [GitHub for Mac](https://mac.github.com/) or [Github for Windows](https://windows.github.com/), which provides you a much easier graphical interface for cloning and working with this content.  You'll want to clone `https://github.com/freezer333/cmps130.git`
+
