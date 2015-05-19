@@ -1,4 +1,5 @@
-# Scientifi Programming with Python
+# Scientific Programming with 
+<img src="../../imgs/python.png"/>
 ## Module 0 - Introduction to Computation
 
 ### Summary
@@ -8,7 +9,9 @@ This module will give you a general overview of what computation actually is, ho
 Chapter 1
 Pages 1 - 7
 
-### Material
-- [Lecture Slides](https://docs.google.com/presentation/d/12ingOEIzUqi5iUV5ppP0D5frRub2pldFndl0SSDLJyA/pub?start=false&loop=false&delayms=3000)
-- [Lecture Video]()
+### Lecture Slides
+<iframe src="https://docs.google.com/presentation/d/12ingOEIzUqi5iUV5ppP0D5frRub2pldFndl0SSDLJyA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+### Lecture Video
+
+### Materials
 - [Python code for Heron's Method](heron.py)

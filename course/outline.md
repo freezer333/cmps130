@@ -1,5 +1,7 @@
-# Scientific Programming with Python
+# Scientific Programming with 
+<img src="imgs/python.png"/>
 ## Module Outline
 
-- [Module 0](modules/module0) - Introduction to Computation
+- [Module 00](modules/module00) - Introduction to Computation
+- [Module 01](modules/module01) - Introduction to Python Programming
 
