@@ -7,17 +7,20 @@ This module introduces branching, the ways in which your program can react to co
 
 **Note to students familar with C++** - even if you think you know branching well, go through this carefully - python has different conditional structures than C-based langauges, and uses indentation differently!
 
-This module is also the first module where a set of specific excercises are presented.  Do these yourself before looking at the solution code and videos
+<div class="highlight">This module is also the first module where a set of specific excercises are presented.  Do these yourself before looking at the solution code and videos</div>
 
 ### Textbook Reading
 Chapter 2.2
 Pages 14-16
 
 ### Lecture Slides
+<iframe src="https://docs.google.com/presentation/d/1Yoz8fxOZv1cJ8fu1kOEi_btIe_FCo52hN3uSE46m-KA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
 
 ### Programming Excercises
-NEED TO GET 1-2 from CS 1 material
+[Programming Exercise #1](../../exercises/pe1) - Finding the largest odd number
+[Programming Exercise #2](../../exercises/pe2) - Calculating a letter grade from a numeric value
+[Programming Exercise #3](../../exercises/pe3) - Calculating shipping cost
 
 ### Material
