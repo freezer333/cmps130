@@ -5,8 +5,6 @@
 ### Summary
 This module introduces iteration, which allows you to do the same command over and over again.  It is actually the last thing we need in order to have a "Turing Complete" language - although Python will go much further than this. 
 
-**Note**:  there are several lecture sections to this module, it is substantially longer than the previous modules.
-
 ### Textbook Reading
 Chapter 2.4 and Chapter 3
 Pages 18 - 33
