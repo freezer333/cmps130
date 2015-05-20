@@ -18,4 +18,5 @@ Pages 16-18
 ### Lecture Video
 
 ### Material
-- [Using strings as variables](letsgo.py)
+- [Code Example:  Using strings as variables](letsgo.py)
+- [Code Example:  Getting some input from the user](letsgo_someone.py)
