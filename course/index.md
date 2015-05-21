@@ -5,6 +5,9 @@ This course covers common computational approaches to solving scientific problem
 
 The course is specifically geared towards students with high aptitude in math, science, and critical thinking.  Previous programming experience is recommended, but not required.  The course will provide sufficient introduction to computer programming to the non-major, previous course work in computer science is not required.  The course’s emphasis on numerical problem solving and data analysis, along with the introduction to the Python programming language, makes it a relevant and valuable course for computer science majors at the sophomore/junior level and for science students wishing to learn how programming can help them in their fields.
 
+## Instructor
+[Professor Scott Frees](http://pages.ramapo.edu/~sfrees)
+Department of Computer Science, [Ramapo College of New Jersey](http://www.ramapo.edu)
 ## Textbook & Course Material
 <a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR"><img src="http://ecx.images-amazon.com/images/I/810f%2BhpJpSL.jpg" style="margin-right:1em;margin-bottom:4em;float:left; width:200px"/></a>
 <a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR">Introduction to Computation and Programming Using Python</a>
