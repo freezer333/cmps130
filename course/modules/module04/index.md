@@ -12,7 +12,6 @@ Pages 18 - 33
 ### Lecture Slides
 <iframe src="https://docs.google.com/presentation/d/1mWa4EEOjDJwQRRGfJSMWHU7t4g71b-uvQ-4lL_vJmj4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <iframe src="https://docs.google.com/presentation/d/1--0FlSkc-nhZqr9V1syzV6A4dMg8rTQ6hZFXSYzv-WM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-- Pitfalls with Floats
 
 ### Lecture Video
 
@@ -20,7 +19,8 @@ Pages 18 - 33
 [Programming Exercise #5](../../exercises/pe5) - Finding the largest odd number again!
 [Programming Exercise #6](../../exercises/pe6) - Stopping on criteria
 [Programming Exercise #7](../../exercises/pe7) - Finding the cube-root using *exhaustive enumeration*
-- PI approximatiion from CS 1
-- Approximate / Bisection to square root (3.3)
-- Successive Approximation - Newton Raphson
+[Programming Exercise #8](../../exercises/pe8) - Printing shapes
+[Programming Exercise #9](../../exercises/pe9) - Approximating PI
+[Programming Exercise #10](../../exercises/pe10) - Computing the Square Root of x - in several ways...
+
 
