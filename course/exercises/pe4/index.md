@@ -12,7 +12,7 @@ In order to qualify for a particular loan, lets assume you must earn over $60K a
 ### Solution Video
 
 ### Solution Code
-[pe3.py](pe4.py)
+[pe4.py](pe4.py)
 
 
 
