@@ -11,7 +11,7 @@ Pages 18 - 33
 
 ### Lecture Slides
 <iframe src="https://docs.google.com/presentation/d/1mWa4EEOjDJwQRRGfJSMWHU7t4g71b-uvQ-4lL_vJmj4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-- For loops
+<iframe src="https://docs.google.com/presentation/d/1--0FlSkc-nhZqr9V1syzV6A4dMg8rTQ6hZFXSYzv-WM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 - Pitfalls with Floats
 
 ### Lecture Video
