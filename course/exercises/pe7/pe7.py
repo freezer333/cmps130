@@ -1,17 +1,26 @@
 ##############################################################################
-# Programming Excercise 4
+# Programming Excercise 7
 #
-# In order to qualify for a particular loan, lets assume you must 
-# earn over $60K a year or earn over $35K and have worked at 
-# your current job for over 5 years.
-# Write program that asks for user's salary and years at current job.
-# Output whether or not they qualify.
+# Ask the user for a number (x) and find the cube 
+# root.  If there is no perfect integer cube root, 
+# print out a message indicating so.
 #############################################################################
 
-salary = float(input("Please enter your current salary:  $"))
-years = float(input("Please enter the number of years you've been at this job:  "))
+x = int(input("Please enter an integer:  "))
+ans = 0
 
-if salary >= 60000 or salary >= 35000 and years >= 5 :
-    print("Congratulations, your load has been approved!")
-else :
-    print("Sorry, we cannot give you the load...")
+# Algorithm:
+#   Find the smallest value (ans) which when
+#   cubed, is equal to or greater than x
+while ans**3 < abs(x):
+    ans += 1
+
+# Algorithm:
+#    (ans) cubed is either exactly abs(x), meaning it
+#    it is the cube root of x, or it is greater
+#    than x, meaning there was no cube root (since
+#    the cube root function is a monotonic function)
+if ans**3 != abs(x):
+    print("Sorry,", x, "is not a perfect cube")
+else:
+    print("The cube root of", x, "is", ans)
