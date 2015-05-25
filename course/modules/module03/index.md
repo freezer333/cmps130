@@ -19,9 +19,9 @@ Pages 14-16
 ### Lecture Video
 
 ### Programming Excercises
-[Programming Exercise #1](../../exercises/pe1) - Finding the largest odd number
-[Programming Exercise #2](../../exercises/pe2) - Calculating a letter grade from a numeric value
-[Programming Exercise #3](../../exercises/pe3) - Calculating shipping cost
-[Programming Exercise #4](../../exercises/pe4) - Loan approval criteria
+[Programming Exercise #1](../../exercises/pe01) - Finding the largest odd number
+[Programming Exercise #2](../../exercises/pe02) - Calculating a letter grade from a numeric value
+[Programming Exercise #3](../../exercises/pe03) - Calculating shipping cost
+[Programming Exercise #4](../../exercises/pe04) - Loan approval criteria
 
 ### Material

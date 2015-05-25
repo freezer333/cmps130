@@ -16,11 +16,11 @@ Pages 18 - 33
 ### Lecture Video
 
 ### Programming Excercises
-[Programming Exercise #5](../../exercises/pe5) - Finding the largest odd number again!
-[Programming Exercise #6](../../exercises/pe6) - Stopping on criteria
-[Programming Exercise #7](../../exercises/pe7) - Finding the cube-root using *exhaustive enumeration*
-[Programming Exercise #8](../../exercises/pe8) - Printing shapes
-[Programming Exercise #9](../../exercises/pe9) - Approximating PI
+[Programming Exercise #5](../../exercises/pe05) - Finding the largest odd number again!
+[Programming Exercise #6](../../exercises/pe06) - Stopping on criteria
+[Programming Exercise #7](../../exercises/pe07) - Finding the cube-root using *exhaustive enumeration*
+[Programming Exercise #8](../../exercises/pe08) - Printing shapes
+[Programming Exercise #9](../../exercises/pe09) - Approximating PI
 [Programming Exercise #10](../../exercises/pe10) - Computing the Square Root of x - in several ways...
 
 
