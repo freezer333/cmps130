@@ -9,15 +9,14 @@ Computing the square root of a number is a well studied mathematical problem, an
 - Technique #2:  Bisection
 - Technique #3:  Newton-Raphson
 
-
-
-
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
 
 ### Solution Code
-[pe9.py](pe9.py)
+[pe10-enumeration.py](pe10-enumeration.py)
+[pe10-bisection.py](pe10-bisection.py)
+[pe10-newton.py](pe10-newton.py)
 
 
 
