@@ -1,0 +1,18 @@
+# Scientific Programming with 
+<img src="../../imgs/python.png"/>
+## Module 08 - Modules
+[back to outline](../../outline.html)
+### Summary
+
+### Textbook Reading
+Chapter 4.5
+Pages 51 - 52
+
+### Lecture Slides
+<iframe src="https://docs.google.com/presentation/d/1LZhf4TftbenQIGrDpMBnSNQg12iO1fSlLBGC-KULLzY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+### Lecture Video
+
+### Extra Materials
+[import_example.py](import_example.py) - example of importing our root module
+[root.py](root.py) - root module containing square root and cube root functions

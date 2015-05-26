@@ -1,6 +1,6 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
-## Module 08 - Reading and Writing Files
+## Module 09 - Reading and Writing Files
 [back to outline](../../outline.html)
 ### Summary
 
