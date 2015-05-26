@@ -19,3 +19,6 @@ Pages 44 - 50
 - [Programming Exercise #13](../../exercises/pe13) - Finding the Greatest Common Denominator
 - [Programming Exercise #14](../../exercises/pe14) - Computing Fibonacci Numbers
 - [Programming Exercise #15](../../exercises/pe15) - Checking for Palindromes
+
+### Extra material
+- [Factorial Comparison](factorial_comparison.py) - program efficiency
