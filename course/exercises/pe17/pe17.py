@@ -22,6 +22,16 @@ def prompt_action() :
         return 0
 
 def print_journal() :
+
+    #==============================================================
+    # Check if the file exists, otherwise we get an error on open
+    import os
+    import os.path
+    if os.path.isfile(filename) == False:
+        print("Sorry, the file doesn't exist!")
+        return
+    #==============================================================
+    
     journal = open(filename, 'r')
     for line in journal:
         print(line[:-1])
