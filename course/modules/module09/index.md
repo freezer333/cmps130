@@ -17,7 +17,7 @@ Pages 53 - 55
 
 
 ### Programming Excercises
-- [Programming Exercise #16](../../exercises/pe16) - Reading numbers from a file
+- [Programming Exercise #16](../../exercises/pe16) - Calculating temperature stats from a file of data points
 - [Programming Exercise #17](../../exercises/pe17) - Keeping a running journal
 
 ### Material

@@ -1,21 +1,20 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
-## Module 08 - Reading and Writing Files
+## Module 10 - Generalized Sequences -> Tuples
 [back to outline](../../outline.html)
 ### Summary
 
 ### Textbook Reading
-Chapter 4.6
-Pages 53 - 55
+Chapter 5.1
+Pages 57 - 58
 
 ### Lecture Slides
-- Syntax
-- Testing
+
 
 ### Lecture Video
 
 ### Programming Excercises
-- Number read from CS 1
-- String journal from CS 1
+- Quadratic formula with multiple assignment
+- Find unique numbers
 
 ### Material
