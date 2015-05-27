@@ -108,18 +108,12 @@
 </head>
 <h1 id="scientific-programming-with">Scientific Programming with</h1>
 <p><img src="../../imgs/python.png"/></p>
-<h2 id="programming-exercise-18-the-quadratic-formula">Programming Exercise 18 - The quadratic formula</h2>
-<p>Create a function call <code>findRoots</code> which accepts three parameters, a, b, and c</p>
-<p>These parameters are constant representing a polynomial equation of the form:</p>
-<p><img src="poly.jpg"/></p>
-<p>You can find values of x that satisfy this equation (which are called roots) using the quadrative formula:</p>
-<p><img src="quad.jpg"/></p>
-<p>Notice the +/- after the -b, this equation is actually denoting two different numbers.  In addition, because the descriminate (value under the square root) could be negative, which gives us irrational numbers, polynomials may not have any real roots.  Alternatively, if the descriminate (b squared - 4ac) is zero, then there is only one root, because the + or - of 0 doesn&#39;t change the value.</p>
-<p>Your findRoots function should return a tuple - which contains either zero, one, or both roots of the polymonial.</p>
-<p><em>Test Cases</em><br>A = 1, B = 5,  C = 6 should give you two roots:  -2 and -3<br>A = 3, B = 90, C = 6 should give you two roots:  -0.06682 and -29.93318<br>A = 2, B = 4,  C = 2 should only give you a single root:  -1<br>A = 5, B = 5,  C = 6 should give you no roots</p>
+<h2 id="programming-exercise-19-building-a-list-with-no-duplicates">Programming Exercise 19 - Building a list with no duplicates</h2>
+<p>Create a function called <code>removeDuplicates</code> which accepts a list <em>modified</em> that list such that all duplicates are removes.  <strong>Hint</strong> the easiest way to do this is to actually create a second list within the function and incrementally build it out of the original elements, making sure not to add anything that is already there.  Before returning, simply remove all from the original list and re-populate it.  </p>
+<p>Your removeDuplicates should not return anything, it only modifies the list passed in as a parameter.</p>
 <div class="highlight"><strong> Reminder -  </strong> you learn by <em>doing</em> not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 <h3 id="solution-video">Solution Video</h3>
 <h3 id="solution-code">Solution Code</h3>
-<p><a href="pe18.py">pe18.py</a></p>
+<p><a href="pe19.py">pe19.py</a></p>
 </html>
