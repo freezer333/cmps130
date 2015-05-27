@@ -4,7 +4,8 @@
 # Create a function called `removeDuplicates` which accepts a list 
 # modified that list such that all duplicates are removes. 
 #############################################################################
-import math
+
+
 
 def removeDuplicates(collection):
     uniques = []
