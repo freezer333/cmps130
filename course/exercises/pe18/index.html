@@ -1,0 +1,125 @@
+<!doctype html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scientific Programming with Python</title>
+
+<style type='text/css'>
+  *{margin:0;padding:0;}
+  body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+  }
+  p {
+    margin:1em 0;
+    line-height:1.5em;
+  }
+  table {
+    font-size:inherit;
+    font:100%;
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+  table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+  input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+  select,option{padding:0 .25em;}
+  optgroup{margin-top:.5em;}
+  pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+  pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+  }
+  pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+  }
+  code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+  }
+  img{border:0;max-width:100%;}
+  abbr{border-bottom:none;}
+  a{color:#4183c4;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a code,a:link code,a:visited code{color:#4183c4;}
+  h2,h3{margin:1em 0;}
+  h1,h2,h3,h4,h5,h6{border:0;}
+  h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+  h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+  h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+  h3{margin-top:1em;}
+  hr{border:1px solid #ddd;}
+  ul{margin:1em 0 1em 2em;}
+  ol{margin:1em 0 1em 2em;}
+  ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+  ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+  blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+  dt{font-weight:bold;margin-left:1em;}
+  dd{margin-left:2em;margin-bottom:1em;}
+  sup {
+      font-size: 0.83em;
+      vertical-align: super;
+      line-height: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  @media screen and (min-width: 914px) {
+      body {
+          width: 854px;
+          margin:0 auto;
+      }
+  }
+  @media print {
+    table, pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+  }
+
+  .highlight {
+    background-color:#f1c40f;
+    padding:1em;
+    
+  }
+</style>
+
+</head>
+<h1 id="scientific-programming-with">Scientific Programming with</h1>
+<p><img src="../../imgs/python.png"/></p>
+<h2 id="programming-exercise-18-the-quadratic-formula">Programming Exercise 18 - The quadratic formula</h2>
+<p>Create a function call <code>findRoots</code> which accepts three parameters, a, b, and c</p>
+<p>These parameters are constant representing a polynomial equation of the form:</p>
+<p><img src="poly.jpg"/></p>
+<p>You can find values of x that satisfy this equation (which are called roots) using the quadrative formula:</p>
+<p><img src="quad.jpg"/></p>
+<p>Notice the +/- after the -b, this equation is actually denoting two different numbers.  In addition, because the descriminate (value under the square root) could be negative, which gives us irrational numbers, polynomials may not have any real roots.  Alternatively, if the descriminate (b squared - 4ac) is zero, then there is only one root, because the + or - of 0 doesn&#39;t change the value.</p>
+<p>Your findRoots function should return a tuple - which contains either zero, one, or both roots of the polymonial.</p>
+<p><em>Test Cases</em><br>A = 1, B = 5,  C = 6 should give you two roots:  -2 and -3<br>A = 3, B = 90, C = 6 should give you two roots:  -0.06682 and -29.93318<br>A = 2, B = 4,  C = 2 should only give you a single root:  -1<br>A = 5, B = 5,  C = 6 should give you no roots</p>
+<div class="highlight"><strong> Reminder -  </strong> you learn by <em>doing</em> not watching.  Do this program yourself first!  Then watch how I did it!</div>
+
+<h3 id="solution-video">Solution Video</h3>
+<h3 id="solution-code">Solution Code</h3>
+<p><a href="pe18.py">pe18.py</a></p>
+</html>
