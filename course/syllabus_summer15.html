@@ -1,0 +1,309 @@
+<!doctype html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scientific Programming with Python</title>
+
+<style type='text/css'>
+  *{margin:0;padding:0;}
+  body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+  }
+  p {
+    margin:1em 0;
+    line-height:1.5em;
+  }
+  table {
+    font-size:inherit;
+    font:100%;
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+  table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+  input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+  select,option{padding:0 .25em;}
+  optgroup{margin-top:.5em;}
+  pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+  pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+  }
+  pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+  }
+  code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+  }
+  img{border:0;max-width:100%;}
+  abbr{border-bottom:none;}
+  a{color:#4183c4;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a code,a:link code,a:visited code{color:#4183c4;}
+  h2,h3{margin:1em 0;}
+  h1,h2,h3,h4,h5,h6{border:0;}
+  h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+  h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+  h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+  h3{margin-top:1em;}
+  hr{border:1px solid #ddd;}
+  ul{margin:1em 0 1em 2em;}
+  ol{margin:1em 0 1em 2em;}
+  ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+  ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+  blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+  dt{font-weight:bold;margin-left:1em;}
+  dd{margin-left:2em;margin-bottom:1em;}
+  sup {
+      font-size: 0.83em;
+      vertical-align: super;
+      line-height: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  @media screen and (min-width: 914px) {
+      body {
+          width: 854px;
+          margin:0 auto;
+      }
+  }
+  @media print {
+    table, pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+  }
+
+  .highlight {
+    background-color:#f1c40f;
+    padding:1em;
+    
+  }
+</style>
+
+</head>
+<h1 id="scientific-programming-with">Scientific Programming with</h1>
+<p><img src="imgs/python.png"/></p>
+<p><strong>Meeting Time:  </strong>This is an online course<br><strong>Location:  </strong>This is an online course<br><strong>Date:  </strong>July 6th - August 6th, 2015<br><strong>Professor:</strong>&nbsp;&nbsp;<a href="http://pages.ramapo.edu/~sfrees">Scott Frees</a>, Professor of Computer Science</p>
+<p><strong> Contact Information</strong><br>Office&nbsp;&nbsp;G315<br>Phone&nbsp;&nbsp;(201) 684-7726<br>Email&nbsp;&nbsp;<a href="mailto:sfrees@ramapo.edu">sfrees@ramapo.edu</a></p>
+<h2 id="course-summary">Course Summary</h2>
+<p>This course covers common computational approaches to solving scientific problems using the Python programming language.  The first half of the course is dedicated to mastery of the Python language within the context of fundamental computer science topics, such object orientation, algorithmic complexity, recursion, and debugging/testing.  The second half of the course focuses on practical scientific applications of Python in data analysis and experimentation.  Student will develop programs using stochastic models, experimental probability and statistics, Monte Carlo simulation, regression analysis, and dynamic programming.  PyLab, a graphing library similar to MatLab, will be utilized such that students can develop programs to report results using scatter plots, bar graphs, histograms, etc.  </p>
+<p>The course is specifically geared towards students with high aptitude in math, science, and critical thinking.  Previous programming experience is recommended, but not required.  The course will provide sufficient introduction to computer programming to the non-major, previous course work in computer science is not required.  The course’s emphasis on numerical problem solving and data analysis, along with the introduction to the Python programming language, makes it a relevant and valuable course for computer science majors at the sophomore/junior level and for science students wishing to learn how programming can help them in their fields.</p>
+<h2 id="online-course-delivery">Online Course Delivery</h2>
+<p><strong>This course is online, and asynchronous - meaning you can access course material at any time.</strong>While all modules/assignments are accessible from this site, we will use <a href="http://moodle.ramapo.edu/">moodle</a> to submit all programming assignments electronically.  <strong>Please review the college&#39;s guide to online courses and moodle <a href="http://www.ramapo.edu/summer/online/">here</a></strong>.</p>
+<h2 id="about-taking-an-online-course">About taking an online course</h2>
+<p>If you have never taken an online course, you may be surprised how easy it is to fall behind.  Below I have explained the way the course is organized, and if anything is unclear please email me ASAP.  The number one thing to remember is that you need to keep pace with the content on moodle, making sure that you master each week’s modules on a consistent basis.  <strong>Computer science, perhaps more than any other subject, builds from lesson to lesson</strong>.  There is no lesson/module that can be safely “skipped” - they will all come back to haunt you if you don’t understand them (or don’t try to learn them!).  <strong>So please - keep up with the work</strong>!.</p>
+<h3 id="how-to-get-help-">How to get help:</h3>
+<p>I will respond to emails very quickly, so whenever you are struggling with a concept, program, or anything else - please get in touch.  It is best to send me your code as an attachment with any email, so I can see precisely what you are doing.  I will hold office hours by appointment, just email me and we&#39;ll work out a time to meet on campus.  We will also be able to video conference on Skype if needed.</p>
+<h1 id="course-objectives">Course Objectives</h1>
+<p>This course prepares a student to utilize computer programming in scientific and experimental applications and analysis.  Students will gain (1) an understanding of the Python programming language, including concepts such as conditional branching, loops, functions, object orientation, and recursion; (2) a broad understanding of numerical methods, algorithmic complexity, and scientific programming concepts such as stochastic programs, probability, Monte Carlo simulation, and dynamic programming. </p>
+<ol>
+<li>Students will be able to write and execute Python programs using all of the following programming concepts: conditional execution, looping, and iteration, collection data types, functions, recursion, function objects, and object orientation</li>
+<li>Students will be able to apply Python programming skills to scientific and computational problems such as: presentation of statistical data in graphical form, stochastic models, Monte Carlo simulation</li>
+<li>Students will be able to effectively integrate their knowledge such that they can contribute to open-source, professional-level Python-based applications.</li>
+</ol>
+<h2 id="textbook-course-material">Textbook &amp; Course Material</h2>
+<p><a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR"><img src="http://ecx.images-amazon.com/images/I/810f%2BhpJpSL.jpg" style="margin-right:1em;margin-bottom:4em;float:left; width:200px"/></a><br><a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR">Introduction to Computation and Programming Using Python</a><br>John V. Guttag<br>ISBN 978-0-262-52500-8 </p>
+<p>The course will follow the textbook quite closely, it is a required resource.</p>
+<p>For all of the material and excercises in this course students may use any operating system Python runs on (which include Microsoft Windows, Mac OS X, and all distributions of Linux).</p>
+<p>Students will need a source code editor - <a href="http://www.sublimetext.com/">Sublime Text</a> or <a href="https://atom.io/">Atom</a> are recommended - but any editor will be fine.  Students must have Administrator access to the machines they work on in order to install Python (version 3) if it is not already installed.</p>
+<p><h1 style="clear:both">Modules</h1><br>The course has been organized into a series of modules, each of which covers an individual topic of the course.  Each module will include at least one slide deck, along with a video recording of the lecture corresponding to the slides.  Many modules will have a series of lectures associated with them.  </p>
+<p>Most modules also have programming excercises associated with them which you should complete (on your own).  Solutions and video recordings of the solution being developed are also posted - however I strongly recommend you try each excercise on your own before watching me solve it!  And of course - the way I solve it may not be the only correct way to do so!</p>
+<h2 id="week-1-monday-7-6-sunday-7-12">Week 1 - Monday 7/6 - Sunday 7/12</h2>
+<ul>
+<li><a href="modules/module00">Module 00</a> - Introduction to Computation</li>
+<li><a href="modules/module01">Module 01</a> - Introduction to Python Programming</li>
+<li><a href="modules/module02">Module 02</a> - Strings and Input</li>
+<li><a href="modules/module03">Module 03</a> - Branching Programs</li>
+<li><a href="modules/module04">Module 04</a> - Loops</li>
+<li><a href="modules/module05">Module 05</a> - Functions</li>
+</ul>
+<h2 id="week-2-monday-7-13-sunday-7-19">Week 2 - Monday 7/13 - Sunday 7/19</h2>
+<ul>
+<li><a href="modules/module06">Module 06</a> - Recursion</li>
+<li><a href="modules/module07">Module 07</a> - Global Variables </li>
+<li><a href="modules/module08">Module 08</a> - Modules </li>
+<li><a href="modules/module09">Module 09</a> - Reading and Writing Files</li>
+<li><a href="modules/module10">Module 10</a> - Generalized Sequences -&gt; Tuples</li>
+<li><a href="modules/module11">Module 11</a> - Lists</li>
+<li><a href="modules/module12">Module 12</a> - Dictionaries</li>
+</ul>
+<h2 id="week-3-monday-7-20-sunday-7-26">Week 3 Monday 7/20 - Sunday 7/26</h2>
+<ul>
+<li><a href="modules/module13">Module 13</a> - Testing and Debugging</li>
+<li><a href="modules/module14">Module 14</a> - Exceptions and Assertions</li>
+<li><a href="modules/module15">Module 15</a> - Abstract Data Types and Classes</li>
+<li><a href="modules/module16">Module 16</a> - Inheritance</li>
+<li><a href="modules/module17">Module 17</a> - Encapsulation</li>
+<li><a href="modules/module18">Module 18</a> - Generators</li>
+</ul>
+<h2 id="week-4-monday-7-27-sunday-8-02">Week 4 - Monday 7/27 - Sunday 8/02</h2>
+<ul>
+<li><a href="modules/module19">Module 19</a> - Algorithm Complexity</li>
+<li><a href="modules/module20">Module 20</a> - Search</li>
+<li><a href="modules/module21">Module 21</a> - Sort</li>
+<li><a href="modules/module22">Module 22</a> - Hash Tables</li>
+<li><a href="modules/module23">Module 23</a> - Plotting Data with PyLab</li>
+</ul>
+<h2 id="week-5-monday-8-03-sunday-8-05">Week 5 - Monday 8/03 - Sunday 8/05</h2>
+<ul>
+<li><a href="modules/module24">Module 24</a> - Stochastic Programs</li>
+<li><a href="modules/module25">Module 25</a> - Simulations and Statistics</li>
+<li><a href="modules/module26">Module 26</a> - Distributions and Histograms</li>
+</ul>
+<p>I <strong>strongly</strong> recommend you work through each module in order - programming is not the type of thing that you can skip around with...</p>
+<h2 id="recommended-pace">Recommended Pace</h2>
+<p>I have organized moodle into 5 weeks, with each week containing several modules.  Programming example solutions are posted within the modules they are presented in.  It is critical that you keep pace with the course and complete the modules and assignments during the week they are posted.  Homework assignments (one per week) are due Friday or Saturday (see individual assignments below) evenings at 11:59pm.  No late work will be accepted, so please try to start the programs early.  Programming Examples presented with each module should be completed independently before you view the solutions - but you do not need to turn these in.</p>
+<p>You may work ahead of the pace on moodle, and are encouraged to do so.  All contents is loaded onto moodle on the first day of class.  The pace set on moodle and above can be best thought of as your minimum pace.  </p>
+<p>The Mid Term exam (see proctoring details below in exam section) will include up to and including Module 12.  The Final Exam will be comprehensive and include content from all Modules</p>
+<h2 id="homework">Homework</h2>
+<p>There are four assigned homework problems, with due dates listed on moodle (and below).  Homework programs will likely require 3-6 hours of your time, and will be more involved and complex than your lab assignments.  I will provide more detailed feedback on homework, and grading will be more discerning.  Homework programs 20% of your semester grade, each being 5%.  Like labs, no late homework will be accepted.</p>
+<table>
+<thead>
+<tr>
+<th>Link to Homework Assignment</th>
+<th>Due Date </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../hw1/Homework1.html">Homework 1</a></td>
+<td>7/11/2015 (Saturday night)</td>
+</tr>
+<tr>
+<td><a href="../hw2/Homework2.html">Homework 2</a></td>
+<td>7/18/2015 (Saturday night)</td>
+</tr>
+<tr>
+<td><a href="../hw3/Homework3.html">Homework 3</a></td>
+<td>7/25/2015 (Saturday night)</td>
+</tr>
+<tr>
+<td><a href="../hw4/Homework4.html">Homework 4</a></td>
+<td>8/01/2015 (Saturday night)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exams-mid-term-and-final-">Exams (Mid Term and Final)</h2>
+<p>Midterm and Final Exams will be proctored, <strong>meaning you will be required to come to campus twice during the five week semester</strong>.  Special accommodations/waivers for this policy will be made on a case-by-case basis, typically for students who attend other institutions as their primary degree-granting school or Ramapo students who live beyond reasonable commuting distance (~1 hour) from campus.  <strong>This must be negotiated with the instructor before July 10th</strong>.  </p>
+<p>Mid-Term exam will July 22nd, and the final exam will be held on August 5th.  Exam proctoring will be scheduled with every attempt to accommodate student schedules, including a night session to allow working students to attend.  The exams will last 3 hours each.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Modules Covered</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mid Term Exam</strong></td>
+<td>Modules 1-12</td>
+<td>Wednesday, 7/22/2015 (9am or 6pm)</td>
+</tr>
+<tr>
+<td><strong>Final Exam</strong></td>
+<td>Modules 13-26</td>
+<td>Wednesday, 8/05/2015 (9am or 6pm)</td>
+</tr>
+</tbody>
+</table>
+<p>You will be required to let me know in advance which session (9am or 6pm) you intend to attend.</p>
+<h1 id="grading">Grading</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">%</th>
+<th style="text-align:left">Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">20%</td>
+<td style="text-align:left">Homework Assignments</td>
+</tr>
+<tr>
+<td style="text-align:right">35%</td>
+<td style="text-align:left">Mid Term Exam</td>
+</tr>
+<tr>
+<td style="text-align:right">45%</td>
+<td style="text-align:left">Final Exam</td>
+</tr>
+</tbody>
+</table>
+<h2 id="letter-grade-assignment">Letter Grade Assignment</h2>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Numeric Score</th>
+<th>Letter</th>
+<th>Numeric Score</th>
+<th>Letter</th>
+<th>Numeric Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>100-94</td>
+<td>A-</td>
+<td>93-90</td>
+</tr>
+<tr>
+<td>B+</td>
+<td>89-87</td>
+<td>B</td>
+<td>86-84</td>
+<td>B-</td>
+<td>83-80</td>
+</tr>
+<tr>
+<td>C+</td>
+<td>79-77</td>
+<td>C</td>
+<td>76-74</td>
+<td>C-</td>
+<td>73-70</td>
+</tr>
+<tr>
+<td>D+</td>
+<td>69-67</td>
+<td>D</td>
+<td>66-60</td>
+<td>F</td>
+<td>&lt; 60</td>
+</tr>
+</tbody>
+</table>
+<h2 id="policy-on-academic-integrity">Policy on Academic Integrity</h2>
+<p>Students are expected to read and understand Ramapo College’s Academic Integrity Policy, which can be found in the Ramapo College Catalog.  Members of the Ramapo College community are expected to be honest and forthright in their academic endeavors.  Students who are suspected of violating this policy will be referred to the Office of the Provost.</p>
+<p>For homework programming assignments, you may discuss ideas, however you may not allow others to see your source code or examine others’.  Sharing of source code is extremely easy to detect and is strictly prohibited.   If sharing of source code is suspected, intentional or otherwise, both parties will immediately be referred to the Office of the Provost.</p>
+<h1 id="students-with-disabilities-">Students with Disabilities:</h1>
+<p>If you need course adaptation or accommodations because of a disability that has been documented with the Office of Specialized Services, please make an appointment during my office hours.</p>
+</html>
