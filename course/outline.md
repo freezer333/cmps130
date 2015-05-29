@@ -13,11 +13,11 @@
 - [Module 07](modules/module07) - Global Variables 
 - [Module 08](modules/module08) - Modules 
 - [Module 09](modules/module09) - Reading and Writing Files
-Not done, need lecture
 - [Module 10](modules/module10) - Generalized Sequences -> Tuples
 - [Module 11](modules/module11) - Lists
 - [Module 12](modules/module12) - Dictionaries
 - [Module 13](modules/module13) - Testing and Debugging
+Not done, need lecture
 - [Module 14](modules/module14) - Exceptions and Assertions
 - [Module 15](modules/module15) - Abstract Data Types and Classes
 - [Module 16](modules/module16) - Inheritance
