@@ -1,6 +1,6 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
-## Module 10 - Lists and Sequence Operators
+## Module 11 - Lists and Sequence Operators
 [back to outline](../../outline.html)
 ### Summary
 This module rounds out the sequence data structures with the `list` - a mutable version of a tuple.  We will also discuss **list comprehension**, a powerful feature of the Python programming language.  Finally, we will discuss a number of common operators and functions associated with all sequence *containers* in Python

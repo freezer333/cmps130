@@ -1,6 +1,6 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
-## Module 10 - Dictionaries
+## Module 12 - Dictionaries
 [back to outline](../../outline.html)
 ### Summary
 This module introduces an extremely valuable data structure, the dictionary.  A dictionary structure allow you to store objects by a key value and can be used in a variety of different situations
