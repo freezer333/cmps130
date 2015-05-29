@@ -1,5 +1,5 @@
 # Scientific Programming with 
-<img src="imgs/python.png"/>
+<img src="course/imgs/python.png"/>
 ## Course Summary
 This course covers common computational approaches to solving scientific problems using the Python programming language.  The first half of the course is dedicated to mastery of the Python language within the context of fundamental computer science topics, such object orientation, algorithmic complexity, recursion, and debugging/testing.  The second half of the course focuses on practical scientific applications of Python in data analysis and experimentation.  Student will develop programs using stochastic models, experimental probability and statistics, Monte Carlo simulation, regression analysis, and dynamic programming.  PyLab, a graphing library similar to MatLab, will be utilized such that students can develop programs to report results using scatter plots, bar graphs, histograms, etc.  
 
