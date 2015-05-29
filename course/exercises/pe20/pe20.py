@@ -37,7 +37,6 @@ def find_average(year_table, month) :
     sum = 0.0
     for r in all_years:
         sum += r
-        print(r)
     return sum / len(all_years)
 
 
