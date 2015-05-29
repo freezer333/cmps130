@@ -9,7 +9,6 @@ The course is specifically geared towards students with high aptitude in math, s
 [Professor Scott Frees](http://pages.ramapo.edu/~sfrees)
 Department of Computer Science, [Ramapo College of New Jersey](http://www.ramapo.edu)
 ## Textbook & Course Material
-<a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR"><img src="http://ecx.images-amazon.com/images/I/810f%2BhpJpSL.jpg" style="margin-right:1em;margin-bottom:4em;float:left; width:200px"/></a>
 <a href="http://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262525003/ref=pd_sim_14_1?ie=UTF8&refRID=0A9QVDKTPH2CPVWAMBFR">Introduction to Computation and Programming Using Python</a>
 John V. Guttag
 ISBN 978-0-262-52500-8 
