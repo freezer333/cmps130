@@ -17,7 +17,6 @@
 - [Module 11](modules/module11) - Lists
 - [Module 12](modules/module12) - Dictionaries
 - [Module 13](modules/module13) - Testing and Debugging
-Not done, need lecture
 - [Module 14](modules/module14) - Exceptions and Assertions
 - [Module 15](modules/module15) - Abstract Data Types and Classes
 - [Module 16](modules/module16) - Inheritance
@@ -27,7 +26,6 @@ Not done, need lecture
 - [Module 20](modules/module20) - Search
 - [Module 21](modules/module21) - Sort
 - [Module 22](modules/module22) - Hash Tables
-No lecture, just textbook and assignment
 - [Module 23](modules/module23) - Plotting Data with PyLab
 - [Module 24](modules/module24) - Stochastic Programs
 - [Module 25](modules/module25) - Simulations and Statistics
