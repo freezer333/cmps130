@@ -14,5 +14,6 @@ Pages 84 - 90
 ### Lecture Video
 
 ### Programming Excercises
-- [Programming Exercise #22](../../exercises/pe22) - Handling exceptions in our rainfall program
+- [Programming Exercise #22](../../exercises/pe22) - Find first even number in a list
+- [Programming Exercise #23](../../exercises/pe23) - Handling exceptions in our rainfall program
 
