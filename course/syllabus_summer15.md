@@ -102,10 +102,10 @@ There are four assigned homework problems, with due dates listed on moodle (and 
 
 |Link to Homework Assignment| Due Date 
 |--|----
-| [Homework 1](hw1/Homework1.html) | 7/11/2015 (Saturday night)
-| [Homework 2](hw2/Homework2.html) | 7/18/2015 (Saturday night)
-| [Homework 3](hw3/Homework3.html) | 7/25/2015 (Saturday night)
-| [Homework 4](hw4/Homework4.html) | 8/01/2015 (Saturday night)
+| [Homework 1](hw/hw1/) | 7/11/2015 (Saturday night)
+| [Homework 2](hw/hw2/) | 7/18/2015 (Saturday night)
+| [Homework 3](hw/hw3/) | 7/25/2015 (Saturday night)
+| [Homework 4](hw/hw4/) | 8/01/2015 (Saturday night)
 
 ## Exams (Mid Term and Final)
 Midterm and Final Exams will be proctored, **meaning you will be required to come to campus twice during the five week semester**.  Special accommodations/waivers for this policy will be made on a case-by-case basis, typically for students who attend other institutions as their primary degree-granting school or Ramapo students who live beyond reasonable commuting distance (~1 hour) from campus.  **This must be negotiated with the instructor before July 10th**.  
