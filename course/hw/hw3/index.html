@@ -1,0 +1,210 @@
+<!doctype html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scientific Programming with Python</title>
+
+<style type='text/css'>
+  *{margin:0;padding:0;}
+  body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+  }
+  p {
+    margin:1em 0;
+    line-height:1.5em;
+  }
+  table {
+    font-size:inherit;
+    font:100%;
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+  table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+  input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+  select,option{padding:0 .25em;}
+  optgroup{margin-top:.5em;}
+  pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+  pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+  }
+  pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+  }
+  code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+  }
+  img{border:0;max-width:100%;}
+  abbr{border-bottom:none;}
+  a{color:#4183c4;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a code,a:link code,a:visited code{color:#4183c4;}
+  h2,h3{margin:1em 0;}
+  h1,h2,h3,h4,h5,h6{border:0;}
+  h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+  h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+  h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+  h3{margin-top:1em;}
+  hr{border:1px solid #ddd;}
+  ul{margin:1em 0 1em 2em;}
+  ol{margin:1em 0 1em 2em;}
+  ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+  ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+  blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+  dt{font-weight:bold;margin-left:1em;}
+  dd{margin-left:2em;margin-bottom:1em;}
+  sup {
+      font-size: 0.83em;
+      vertical-align: super;
+      line-height: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  @media screen and (min-width: 914px) {
+      body {
+          width: 854px;
+          margin:0 auto;
+      }
+  }
+  @media print {
+    table, pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+  }
+
+  .highlight {
+    background-color:#f1c40f;
+    padding:1em;
+    
+  }
+</style>
+
+</head>
+<h1 id="cmps-130-homework-3">CMPS 130 - Homework #3</h1>
+<p>For this assignment you will create a class that represents the rainfall data we&#39;ve been working with in programming exercises <a href="../../exercises/pe20/">20</a>, <a href="../../exercises/pe21/">21</a>, and <a href="../../exercises/pe23/">23</a>.</p>
+<h2 id="part-1-50-points-">Part 1 (50 points)</h2>
+<p>Design a class called <code>RainfallTable</code> which has an <code>__init__</code> function that accepts as a parameter a path to the rainfall data file.  For example, you&#39;d instantiate an instance of the class like so:</p>
+<pre><code class="lang-python">table = RainfallTable(&#39;../../data/njrainfall.txt&#39;)
+</code></pre>
+<p>Your class should read the file (see programming exercises <a href="../../exercises/pe20/">20</a>, <a href="../../exercises/pe21/">21</a>) and store them in a suitable data structure (I used lists in pe20, a dictionary in pe21 - take your pick or devise a different way, its up to you!).</p>
+<p>Your class must also support the following four <strong>methods</strong>:</p>
+<pre><code class="lang-python">def get_rainfall(self, year, month):
+    &quot;&quot;&quot; Returns the rainfall associated with 
+        the given year and month.  Both values
+        are assumed to be integers (month given
+        as 1-12, year as a four digit year).
+        Raises an exception if the year/month 
+        combination are not found
+    &quot;&quot;&quot;
+
+def get_average_rainfall_for_month(self, month):
+    &quot;&quot;&quot; Returns the average rainfall associated with 
+        the given month across all years in the table.  
+        Month is assumed to be an integer (1-12.
+        Raises an exception if the month is not valid.
+    &quot;&quot;&quot;
+
+def get_min_year(self):
+    &quot;&quot;&quot; Returns the minimum year in the table &quot;&quot;&quot;
+
+def get_max_year(self):
+    &quot;&quot;&quot; Returns the maximum year in the table &quot;&quot;&quot;
+</code></pre>
+<h2 id="part-2-30-points-">Part 2 (30 points)</h2>
+<p>Implement the following <em>additional</em> methods in yoru RainfallTable class:</p>
+<pre><code class="lang-python">def get_median_rainfall_for_month(self, month):
+    &quot;&quot;&quot; Returns the median* rainfall associated with 
+        the given month across all years in the table.  
+        Month is assumed to be an integer (1-12.
+        Raises an exception if the month is not valid.
+    &quot;&quot;&quot;
+def get_average_rainfall_for_year(self, year):
+    &quot;&quot;&quot; Returns the average rainfall in
+        the given year across all months.
+        Raises exception if year is not
+        in table
+    &quot;&quot;&quot;
+def get_median_rainfall_for_year(self, year):
+    &quot;&quot;&quot; Returns the median rainfall in
+        the given year across all months.
+        Raises exception if year is not
+        in table
+    &quot;&quot;&quot;
+</code></pre>
+<ul>
+<li><a href="http://www.math.toronto.edu/lshorser/Averages.pdf">median</a> requires you to sort the data, so you&#39;ll need to create a temporary list.</li>
+</ul>
+<h2 id="part-3-10-points-">Part 3 (10 points)</h2>
+<p>Create two <em>generator</em> methods (see section 8.3.1 in the text) that allow a caller to iterate through rainfall data by year (all months in the year), or by month (all years for a given month).  The should look like the following (but remember, they don&#39;t return a list, they should <code>yeild</code> values!)</p>
+<pre><code class="lang-python">def get_all_by_year(self, year):
+    &quot;&quot;&quot; Returns the rainfall values for each
+        month in the given year.  Raise exception
+        if year is not found
+    &quot;&quot;&quot;
+
+def get_all_by_month(self, month):
+    &quot;&quot;&quot; Returns the rainfall values for each
+        year during the given month.  Raise exception
+        if month is not valid
+    &quot;&quot;&quot;
+</code></pre>
+<h2 id="part-4-10-points-">Part 4 (10 points)</h2>
+<p>Add a new method, called <code>find_droughts</code> to your class.  For the purposes of this assignment, a &quot;drought&quot; is any time there are <strong>three</strong> consecutive months where the monthly rainfalls are at least 5% less than the monthly average.  Return a list of strings that represent each drought as a month/year.  For example, if (and I&#39;m not actually looking at the data while I type this!) September, October, November, December, and January are had 5% less rainfall in each month than their monthly average in 1978-1979, return a list with (at least) a string looking like 9/1978 - 1/1979.  Your returned list should actually have all the droughts though...</p>
+<pre><code class="lang-python">def get_droughts(self) :
+    &quot;&quot;&quot; returns a list of strings, representing date (month/year) ranges
+        where three or more months in a row had at least 5% less rainfall than
+        their historical monthly averages
+    &quot;&quot;&quot;
+</code></pre>
+<h1 id="the-main-part-of-the-program">The main part of the program</h1>
+<p>I will grade your class by running the following code.  You may submit your own test code with your file as well, but I will replace it with the following:</p>
+<pre><code>table = RainfallTable(&quot;../../data/njrainfall.txt&quot;)
+print(table.get_rainfall(1993, 6))
+print(table.get_average_rainfall_for_month(6))
+
+for year in range(table.get_min_year(), table.get_max_year()+1) :
+    print(&quot;Average rainfall in &quot;, year, &quot;=&quot;, table.get_average_rainfall_for_year(year))
+    print(&quot;Median rainfall in &quot;, year, &quot;=&quot;, table.get_median_rainfall_for_year(year))
+    print(&quot;===========&quot;)
+    for rain in table.get_all_by_year(year):
+        print(rain, end=&#39;\t&#39;)
+    print(&quot;\n===========&quot;)
+
+
+for month in range(1, 13) :
+    print(&quot;Average rainfall in month&quot;, month, &quot;=&quot;, table.get_average_rainfall_for_month(month))
+    print(&quot;Median rainfall in month&quot;, month, &quot;=&quot;, table.get_median_rainfall_for_month(month))
+    print(&quot;===========&quot;)
+    for rain in table.get_all_by_month(month):
+        print(rain, end=&#39;\t&#39;)
+    print(&quot;\n===========&quot;)
+
+for d in table.get_droughts() :
+    print(&quot;Drought:  &quot;, d)
+</code></pre></html>
