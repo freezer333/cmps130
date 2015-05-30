@@ -1,6 +1,6 @@
 # Scientific Programming with 
 <img src="../../imgs/python.png"/>
-## Programming Exercise 21 - Refining Exercise 20 with Dictionaries
+## Programming Exercise 23 - Refining Exercise 20 & 21 with Exceptions
 
 In [programming example 20](../pe20) and [21](../pe21) we created programs to read rainfall data from a text file and let the user search for data by year and month.
 
