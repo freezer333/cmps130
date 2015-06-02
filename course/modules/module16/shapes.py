@@ -20,7 +20,7 @@ class Circle(Shape):
 
     def getPerimeter(self):
         return 2 * math.pi * self.radius
-        
+
     def getArea(self):
         return math.pi * (self.radius**2)
 
@@ -46,5 +46,5 @@ s = Shape()
 print (s)
 c = Circle(radius=8, color="green")
 print (c)
-r = Rectangle(width=5, height="10")
+r = Rectangle(width=5, height=10)
 print(r)
