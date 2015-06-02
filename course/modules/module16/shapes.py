@@ -17,10 +17,13 @@ class Circle(Shape):
     def __init__(self, color = "red", solid = True, radius = 1):
         Shape.__init__(self, color, solid)
         self.radius = radius
+
     def getPerimeter(self):
         return 2 * math.pi * self.radius
+        
     def getArea(self):
         return math.pi * (self.radius**2)
+
     def __str__(self):
         return Shape.__str__(self).replace("shape", "circle") + \
          " with a radius of " + str(self.radius)
