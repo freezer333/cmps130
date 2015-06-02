@@ -71,20 +71,19 @@ Most modules also have programming excercises associated with them which you sho
 - [Module 14](modules/module14) - Exceptions and Assertions
 - [Module 15](modules/module15) - Abstract Data Types and Classes
 - [Module 16](modules/module16) - Inheritance
-- [Module 17](modules/module17) - Encapsulation
-- [Module 18](modules/module18) - Generators
+- [Module 17](modules/module17) - Encapsulation and Generators
 
 ## Week 4 - Monday 7/27 - Sunday 8/02
-- [Module 19](modules/module19) - Algorithm Complexity
-- [Module 20](modules/module20) - Search
-- [Module 21](modules/module21) - Sort
-- [Module 22](modules/module22) - Hash Tables
-- [Module 23](modules/module23) - Plotting Data with PyLab
+- [Module 18](modules/module18) - Algorithm Complexity
+- [Module 19](modules/module19) - Search
+- [Module 20](modules/module20) - Sort
+- [Module 21](modules/module21) - Hash Tables
+- [Module 22](modules/module22) - Plotting Data with PyLab
 
 ## Week 5 - Monday 8/03 - Sunday 8/05
-- [Module 24](modules/module24) - Stochastic Programs
-- [Module 25](modules/module25) - Simulations and Statistics
-- [Module 26](modules/module26) - Distributions and Histograms
+- [Module 23](modules/module23) - Stochastic Programs
+- [Module 24](modules/module24) - Simulations and Statistics
+- [Module 25](modules/module25) - Distributions and Histograms
 
 
 I **strongly** recommend you work through each module in order - programming is not the type of thing that you can skip around with...
@@ -115,7 +114,7 @@ Mid-Term exam will July 22nd, and the final exam will be held on August 5th.  Ex
 |  | Modules Covered | Date
 |--|---|---
 | **Mid Term Exam** | Modules 1-12 | Wednesday, 7/22/2015 (9am or 6pm)
-| **Final Exam** | Modules 13-26 | Wednesday, 8/05/2015 (9am or 6pm)
+| **Final Exam** | Modules 13-25 | Wednesday, 8/05/2015 (9am or 6pm)
 
 You will be required to let me know in advance which session (9am or 6pm) you intend to attend.
 
