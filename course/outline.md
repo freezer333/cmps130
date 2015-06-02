@@ -20,15 +20,14 @@
 - [Module 14](modules/module14) - Exceptions and Assertions
 - [Module 15](modules/module15) - Abstract Data Types and Classes
 - [Module 16](modules/module16) - Inheritance
-- [Module 17](modules/module17) - Encapsulation
-- [Module 18](modules/module18) - Generators
-- [Module 19](modules/module19) - Algorithm Complexity
-- [Module 20](modules/module20) - Search
-- [Module 21](modules/module21) - Sort
-- [Module 22](modules/module22) - Hash Tables
-- [Module 23](modules/module23) - Plotting Data with PyLab
-- [Module 24](modules/module24) - Stochastic Programs
-- [Module 25](modules/module25) - Simulations and Statistics
-- [Module 26](modules/module26) - Distributions and Histograms
+- [Module 17](modules/module17) - Encapsulation and Generators
+- [Module 18](modules/module18) - Algorithm Complexity
+- [Module 19](modules/module19) - Search
+- [Module 20](modules/module20) - Sort
+- [Module 21](modules/module21) - Hash Tables
+- [Module 22](modules/module22) - Plotting Data with PyLab
+- [Module 23](modules/module23) - Stochastic Programs
+- [Module 24](modules/module24) - Simulations and Statistics
+- [Module 25](modules/module25) - Distributions and Histograms
 
 
