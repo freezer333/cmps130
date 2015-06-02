@@ -8,8 +8,12 @@ This module is the first in a series dedicated to learning object oriented progr
 Please ask questions - this is a tricky, and very important topic!
 
 ### Textbook Reading
+<div class="highlight">** Important -  ** it is critical that you keep up with the reading!  You are responsible for *everything* covered in the textbook (among the chapters we cover).  Particularly in Chapter 8, there are some subtle concepts being described and the book is hugely important.</div>
+
 Chapter 8.1
 Pages 90-98
+
+
 
 ### Lecture Slides
 <iframe src="https://docs.google.com/presentation/d/1Cg80gF9ibFweiSLJdLpvzfEZ8oLpeo0Fe1PKLNwt7QE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
