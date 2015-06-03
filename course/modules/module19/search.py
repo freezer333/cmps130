@@ -46,25 +46,6 @@ def linear_find_ordered(data, key):
     return False
 
 
-class Test
-    def __init__(self, name, algorithm):
-        self.hits = 0
-        self.elapsed_time = 0
-        self.name = name
-        self.algorithm = algorithm
-    def __str__(self):
-        print(name + "\tFound", self.hits, " successfully in", self.elapsed, "seconds")
-    
-    def run_test(data, keys):
-        for key in keys:
-            start = time.time()
-            if algorithm(data, key):
-                result.hits += 1
-            end = time.time()
-            result.elapsed_time += (end-start)
-        return result
-
-
 gen_max = 10000
 random.seed(time.time())
 data = []
@@ -73,18 +54,39 @@ for i in range(0, gen_max):
 
 data.sort()
 
+hits_linear_unordered = 0
+hits_linear_ordered = 0
+hits_binary = 0
+elapsed_time_linear_unordered = 0
+elapsed_time_linear_ordered = 0
+elapsed_time_binary = 0
+
 keys = []
 for i in range (0, gen_max):
     keys.append(random.randint(0, gen_max))
 
-lu = TestResult("Linear, unordered", linear_find_unordered)
-lo = TestResult("Linear, ordered", linear_find_ordered)
-bi = TestResult("Binary Search", binary_search)
+for key in keys:
+    # test unordered linear search
+    start = time.time()
+    if linear_find_unordered(data, key):
+        hits_linear_unordered += 1
+    end = time.time()
+    elapsed_time_linear_unordered += (end-start)
 
-lu.run_test(data, keys);
-li.run_test(data, keys);
-bs.run_test(data, keys);
+    # test linear, but ordered search
+    start = time.time()
+    if linear_find_ordered(data, key):
+        hits_linear_ordered += 1
+    end = time.time()
+    elapsed_time_linear_ordered += (end-start)
 
-print(lu)
-print(lo)
-print(bi)
+    # test binary_search
+    start = time.time()
+    if binary_search(data, key):
+        hits_binary += 1
+    end = time.time()
+    elapsed_time_binary += (end-start)
+
+print("Linear Unordered:  Found", hits_linear_unordered, " successfully in", elapsed_time_linear_unordered, "seconds")
+print("Linear Ordered:    Found", hits_linear_ordered, " successfully in", elapsed_time_linear_ordered, "seconds")
+print("Binary:            Found", hits_binary, " successfully in", elapsed_time_binary, "seconds")
