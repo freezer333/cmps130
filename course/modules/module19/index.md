@@ -4,16 +4,20 @@
 [back to outline](../../outline.html)
 ### Summary
 This module examines runtime and algorithm design specifically focused on searching lists.  We'll look at linear, and then binary search algorithms and write some code that measures their runtime.
+
+We'll also look at two different implementations of testing programs for search, offering a look at how functions, classes, and function object can improve the readabilty and overal design of a program.
+
 ### Textbook Reading
 Chapter 10
 Pages 125-130
 
 ### Lecture Slides
-<iframe src="https://docs.google.com/presentation/d/1qbWQI7cKEQYv6RzlcfXWlaaS_QjTyVTFIGiVW_3aawI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1NKnQjWJvOkI7cre5FPIT1GQEo9-k46zA8UOvezX9McY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
 
 ### Lecture Material
 [search.py](search.py)
+[search_good_design.py](search_good_design.py)
 
 
