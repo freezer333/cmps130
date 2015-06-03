@@ -8,7 +8,7 @@ This module examines runtime and algorithm design specifically focused on search
 We'll also look at two different implementations of testing programs for search, offering a look at how functions, classes, and function object can improve the readabilty and overal design of a program.
 
 ### Textbook Reading
-Chapter 10
+Chapter 10.1
 Pages 125-130
 
 ### Lecture Slides
