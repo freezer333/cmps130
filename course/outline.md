@@ -26,8 +26,6 @@
 - [Module 20](modules/module20) - Sort
 - [Module 21](modules/module21) - Hash Tables
 - [Module 22](modules/module22) - Plotting Data with PyLab
-- [Module 23](modules/module23) - Stochastic Programs
-- [Module 24](modules/module24) - Simulations and Statistics
-- [Module 25](modules/module25) - Distributions and Histograms
+- [Module 23](modules/module23) - Stochastic Programs, Simulations, and Statistics
 
 

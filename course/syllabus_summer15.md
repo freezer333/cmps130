@@ -78,12 +78,10 @@ Most modules also have programming excercises associated with them which you sho
 - [Module 19](modules/module19) - Search
 - [Module 20](modules/module20) - Sort
 - [Module 21](modules/module21) - Hash Tables
-- [Module 22](modules/module22) - Plotting Data with PyLab
 
-## Week 5 - Monday 8/03 - Sunday 8/05
-- [Module 23](modules/module23) - Stochastic Programs
-- [Module 24](modules/module24) - Simulations and Statistics
-- [Module 25](modules/module25) - Distributions and Histograms
+## Week 5 - Monday 8/03 - Wednesday 8/05
+- [Module 22](modules/module22) - Plotting Data with PyLab
+- [Module 23](modules/module23) - Stochastic Programs and Statistical Simulation
 
 
 I **strongly** recommend you work through each module in order - programming is not the type of thing that you can skip around with...
@@ -103,8 +101,8 @@ There are four assigned homework problems, with due dates listed on moodle (and 
 |--|----
 | [Homework 1](hw/hw1/) | 7/11/2015 (Saturday night)
 | [Homework 2](hw/hw2/) | 7/18/2015 (Saturday night)
-| [Homework 3](hw/hw3/) | 7/25/2015 (Saturday night)
-| [Homework 4](hw/hw4/) | 8/01/2015 (Saturday night)
+| [Homework 3](hw/hw3/) | 8/01/2015 (Saturday night)
+| [Homework 4](hw/hw4/) | 8/06/2015 (Thursday night)
 
 ## Exams (Mid Term and Final)
 Midterm and Final Exams will be proctored, **meaning you will be required to come to campus twice during the five week semester**.  Special accommodations/waivers for this policy will be made on a case-by-case basis, typically for students who attend other institutions as their primary degree-granting school or Ramapo students who live beyond reasonable commuting distance (~1 hour) from campus.  **This must be negotiated with the instructor before July 10th**.  
@@ -114,7 +112,7 @@ Mid-Term exam will July 22nd, and the final exam will be held on August 5th.  Ex
 |  | Modules Covered | Date
 |--|---|---
 | **Mid Term Exam** | Modules 1-12 | Wednesday, 7/22/2015 (9am or 6pm)
-| **Final Exam** | Modules 13-25 | Wednesday, 8/05/2015 (9am or 6pm)
+| **Final Exam** | Modules 13-23 | Wednesday, 8/05/2015 (9am or 6pm)
 
 You will be required to let me know in advance which session (9am or 6pm) you intend to attend.
 
