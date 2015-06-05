@@ -23,6 +23,7 @@ Pages 141-151
 
 ### Additional Material
 - [matplotlib](http://matplotlib.org/) - the main site for the plotting functionality library we are using.
+- [Plotting documentation](http://matplotlib.org/users/pyplot_tutorial.html) - a fairly good overview of plotting options
 - [Tutorials recommended by matplotlib](http://matplotlib.org/resources/index.html) *carefull, some of these tutorials go far beyond the material covered in the textbook.  This is great, but don't get too bogged down - you are only responsible for what is in the textbook!
 
 
