@@ -16,6 +16,9 @@ Pages 18 - 33
 ### Lecture Video
 <iframe width="420" height="315" src="https://www.youtube.com/embed/r5D86ONuK_o" frameborder="0" allowfullscreen></iframe>
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/kWhh-Ghad38" frameborder="0" allowfullscreen></iframe>
+
+
 ### Programming Excercises
 [Programming Exercise #5](../../exercises/pe05) - Finding the largest odd number again!
 [Programming Exercise #6](../../exercises/pe06) - Stopping on criteria
