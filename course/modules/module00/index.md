@@ -11,7 +11,9 @@ Pages 1 - 7
 
 ### Lecture Slides
 <iframe src="https://docs.google.com/presentation/d/12ingOEIzUqi5iUV5ppP0D5frRub2pldFndl0SSDLJyA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YaZ0ESiJ77w" frameborder="0" allowfullscreen></iframe>
 
 ### Materials
 - [Python code for Heron's Method](heron.py)
