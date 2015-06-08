@@ -12,6 +12,7 @@ Pages 34 - 44
 <iframe src="https://docs.google.com/presentation/d/1mTTxk-5L0x0mI3Jomk4vDWluI9MrJA3qiRsLqZi3cbw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/XZYnV1zLz1g" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #11](../../exercises/pe11) - Printing with Functions
