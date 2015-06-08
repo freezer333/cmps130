@@ -17,6 +17,8 @@ Pages 14-16
 <iframe src="https://docs.google.com/presentation/d/1Yoz8fxOZv1cJ8fu1kOEi_btIe_FCo52hN3uSE46m-KA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YQ-BfHiS6FM" frameborder="0" allowfullscreen></iframe>
+
 
 ### Programming Excercises
 [Programming Exercise #1](../../exercises/pe01) - Finding the largest odd number
