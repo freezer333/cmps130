@@ -14,6 +14,7 @@ Pages 18 - 33
 <iframe src="https://docs.google.com/presentation/d/1--0FlSkc-nhZqr9V1syzV6A4dMg8rTQ6hZFXSYzv-WM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/r5D86ONuK_o" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 [Programming Exercise #5](../../exercises/pe05) - Finding the largest odd number again!
