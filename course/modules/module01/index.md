@@ -22,6 +22,7 @@ Pages 7-13
 <iframe src="https://docs.google.com/presentation/d/1QKbwaKIe7CQQ2GiBvXnEoW9KmAgbW8C7yDE2rXbQqHI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/JRKmhqdmNFo" frameborder="0" allowfullscreen></iframe>
 
 ### Material
 - [Download Python](https://www.python.org/downloads/) - ** please make sure you download Python version 3!** for the correct operating system.
