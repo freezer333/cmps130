@@ -18,7 +18,9 @@ Chapter 2.1
 Pages 7-13
 
 ### Lecture Slides
+<iframe src="https://docs.google.com/presentation/d/1BosKQ3Y-FUgoh2n2EaB4nVatlC9-o612Btxbht_YeUE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <iframe src="https://docs.google.com/presentation/d/1QKbwaKIe7CQQ2GiBvXnEoW9KmAgbW8C7yDE2rXbQqHI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ### Lecture Video
 
 ### Material
