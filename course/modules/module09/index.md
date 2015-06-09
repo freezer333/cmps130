@@ -9,12 +9,10 @@ Chapter 4.6
 Pages 53 - 55
 
 ### Lecture Slides
-- Syntax
-- Testing
-
-### Lecture Video
 <iframe src="https://docs.google.com/presentation/d/1T6Hx-wbsqXkPVzbvULFWanYdoPQWu8gaE91q-tHNSy4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Q5buCV63SI8" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #16](../../exercises/pe16) - Calculating temperature stats from a file of data points
