@@ -3,10 +3,10 @@ import time
 
 
 n = int(input("Enter N:  "))
-ans = 1.0
+ans = 1
 
 # convert to float to use as input to fact function
-old_n = n * 1.0
+old_n = n
 
 # get current time (clock ticks since Jan 1 1970)
 start = time.time()
@@ -27,7 +27,6 @@ def fact(n):
 
 start = time.time()
 ans = fact(old_n)
-end = time.time()
 end = time.time()
 print("Answer is:  " , ans)
 print("Computed recursively in ", end-start, " seconds")

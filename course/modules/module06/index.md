@@ -13,7 +13,7 @@ Pages 44 - 50
 <iframe src="https://docs.google.com/presentation/d/1np8oxbm01mdgBJ4K4yIZxS4QC15F1ZTdpokLQC-aqXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
-
+<iframe width="420" height="315" src="https://www.youtube.com/embed/qbf8mXDw7mo" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #13](../../exercises/pe13) - Finding the Greatest Common Denominator
