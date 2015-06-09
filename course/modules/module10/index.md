@@ -13,6 +13,7 @@ Pages 57 - 58
 <iframe src="https://docs.google.com/presentation/d/1vJ1j_56O45FHYW_PuaQ7W7TTKZOT03h0vigZ4oi2a3M/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/hUddqPhxZYk" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #18](../../exercises/pe18) - Solving roots of polynomial with quadrative equation
