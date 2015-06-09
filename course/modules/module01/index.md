@@ -24,6 +24,8 @@ Pages 7-13
 ### Lecture Video
 <iframe width="420" height="315" src="https://www.youtube.com/embed/JRKmhqdmNFo" frameborder="0" allowfullscreen></iframe>
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/kWYNuJhkkv0" frameborder="0" allowfullscreen></iframe>
+
 ### Material
 - [Download Python](https://www.python.org/downloads/) - ** please make sure you download Python version 3!** for the correct operating system.
 - [Help using the Windows Command Prompt](http://www.7tutorials.com/command-prompt-how-use-basic-commands) - you'll need to use the command prompt to run your programs!!!
