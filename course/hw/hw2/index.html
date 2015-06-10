@@ -1,0 +1,169 @@
+<!doctype html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scientific Programming with Python</title>
+
+<style type='text/css'>
+  *{margin:0;padding:0;}
+  body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+  }
+  p {
+    margin:1em 0;
+    line-height:1.5em;
+  }
+  table {
+    font-size:inherit;
+    font:100%;
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+  table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+  input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+  select,option{padding:0 .25em;}
+  optgroup{margin-top:.5em;}
+  pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+  pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+  }
+  pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+  }
+  code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+  }
+  img{border:0;max-width:100%;}
+  abbr{border-bottom:none;}
+  a{color:#4183c4;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a code,a:link code,a:visited code{color:#4183c4;}
+  h2,h3{margin:1em 0;}
+  h1,h2,h3,h4,h5,h6{border:0;}
+  h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+  h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+  h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+  h3{margin-top:1em;}
+  hr{border:1px solid #ddd;}
+  ul{margin:1em 0 1em 2em;}
+  ol{margin:1em 0 1em 2em;}
+  ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+  ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+  blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+  dt{font-weight:bold;margin-left:1em;}
+  dd{margin-left:2em;margin-bottom:1em;}
+  sup {
+      font-size: 0.83em;
+      vertical-align: super;
+      line-height: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  @media screen and (min-width: 914px) {
+      body {
+          width: 854px;
+          margin:0 auto;
+      }
+  }
+  @media print {
+    table, pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+  }
+
+  .highlight {
+    background-color:#f1c40f;
+    padding:1em;
+    
+  }
+</style>
+
+</head>
+<h1 id="cmps-130-homework-2">CMPS 130 - Homework #2</h1>
+<p>In this assign you&#39;ll write a program that allows a user to explore/search the periodic table of elements and compute the molecular mass of compounds.</p>
+<h2 id="loading-the-data">Loading the data</h2>
+<p>Download the text file - <a href="periodic_table.txt">periodic_table.txt</a> - and save it in the same directory as your program.  The following function accepts the name of the file (defaults to &quot;periodic_table.txt&quot;) and returns a dictionary object representing the periodic table.  The dictionary uses the atomic symbol of the element as the key, and the value is a tuple containing the element&#39;s name, its atomic number, its atomic mass.</p>
+<pre><code class="lang-python">def build_periodic_table(filename=&quot;periodic_table.txt&quot;)
+    pass
+</code></pre>
+<h2 id="your-program">Your program</h2>
+<p>Your program should call this function and then allow the user to use the dictionary returned as follows:</p>
+<p>In a loop, display the following menu:</p>
+<pre><code>1) Search by symbol/name
+2) Search by atomic mass
+3) Molecular Mass Calculation
+4) Quit
+
+Please enter your choice:
+</code></pre><h3 id="search-by-symbol-name-if-user-enters-1-">Search by symbol/name - If user enters (1)</h3>
+<ul>
+<li>Ask user for a string</li>
+<li>Search your dictionary for any elements whose name <strong>OR</strong> symbol contain the string entered (case insensitive)</li>
+<li>Display the list of elements, where the symbol, name, and mass are listed in columns.<br>  The best way to do this is to create a function that accepts the dictionary (the periodic table) and the search string.<ol>
+<li>Initialize a &quot;result&quot; list to empty.</li>
+<li>Iterate through the dictionary keys<ul>
+<li>If the key (the symbol) contains the search string (remember string has a <code>find</code> method!), add the tuple associated with the key to your result list.</li>
+<li>Else, access the value (a tuple) associated with the key and if the first element (the element&#39;s name) contains the search string, add the tuple to your result list<br><em>Bonus +2 points for using a list comprehension instead of standard for loop!</em></li>
+</ul>
+</li>
+<li>Return the list of tuples and print them.</li>
+</ol>
+</li>
+</ul>
+<h3 id="search-by-atomic-mass-if-user-enters-2-">Search by atomic mass - If user enters (2)</h3>
+<ul>
+<li>Ask user for two floating point values - minimum and maximum mass</li>
+<li>Search your dictionary for any element whose atomic mass is within the range (inclusive) specified by the user</li>
+<li>Display the list of elements, where the symbol, name, and mass are listed in columns.<br>  The best way to do this is to create a function that accepts the dictionary (the periodic table) and the min/max values entered by the user.<ol>
+<li>Initialize a &quot;result&quot; list to empty.</li>
+<li>Iterate through the dictionary keys<ul>
+<li>Access the value associated with the key (a tuple) and if the third element (the mass) is &gt;= than min and &lt;= max, add the typle to your result list<br><em>Bonus +2 points for using a list comprehension instead of standard for loop!</em></li>
+</ul>
+</li>
+<li>Return the list of tuples and print them.</li>
+</ol>
+</li>
+</ul>
+<h3 id="molecular-mass-calculation-if-user-enters-3-">Molecular Mass Calculation - If user enters (3)</h3>
+<ul>
+<li><p>Ask the user to enter a molecular formula.  We&#39;ll use the following input method to keep things simple:</p>
+<ol>
+<li>Ask user to enter symbol.  They may enter <code>.</code> (a period) if there are no more symbols</li>
+<li>Ask user how many atoms of the symbol are in the molecule (they must enter an integer)<br>Repeat Steps 1 and 2 until user enters . for the atomic symbol</li>
+</ol>
+</li>
+<li><p>You should construct a list of tuples to represent this formula, where each entry in the list is a tuple whose first element is the symbol and second element is the number of atoms.  For example, the molecule BaCl<sub>2</sub> should be represented as the following list:</p>
+<pre><code>  [(Ba, 1), (Cl, 2)]
+</code></pre></li>
+<li>Now lookup each element in the molecule.  If the atom is not valid (not in your periodic table), simply stop the calculation and tell the user the molecular formula contains an unknown element.  Otherwise, compute the weighted total for the molecule.  Going through the list, you&#39;d calculate the molecular mass as <code>1 * 137.327 (mass of Ba) + 2 * 35.4527 (mass of Cl) = 208.232</code></li>
+</ul>
+<h3 id="quit-if-user-enters-4-">Quit - If user enters (4)</h3>
+<p>Exit the program!</p>
+</html>
