@@ -41,9 +41,9 @@ ISBN 978-0-262-52500-8
 
 The course will follow the textbook quite closely, it is a required resource.
 
-For all of the material and excercises in this course students may use any operating system Python runs on (which include Microsoft Windows, Mac OS X, and all distributions of Linux).
+For all of the material and excercises in this course students may use any operating system Python runs on (which include Microsoft Windows, Mac OS X, and all distributions of Linux). 
 
-Students will need a source code editor - [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/) are recommended - but any editor will be fine.  Students must have Administrator access to the machines they work on in order to install Python (version 3) if it is not already installed.
+Students will need a source code editor - [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/) are recommended - but any editor will be fine.  Students must have Administrator access to the machines they work on in order to [install Python (version 3)](https://www.python.org/downloads/) if it is not already installed.
 
 <h1 style="clear:both">Modules</h1>
 The course has been organized into a series of modules, each of which covers an individual topic of the course.  Each module will include at least one slide deck, along with a video recording of the lecture corresponding to the slides.  Many modules will have a series of lectures associated with them.  
