@@ -6,8 +6,13 @@ In this assign you'll write a program that allows a user to explore/search the p
 Download the text file - [periodic_table.txt](periodic_table.txt) - and save it in the same directory as your program.  The following function accepts the name of the file (defaults to "periodic_table.txt") and returns a dictionary object representing the periodic table.  The dictionary uses the atomic symbol of the element as the key, and the value is a tuple containing the element's name, its atomic number, its atomic mass.
 
 ```python
-def build_periodic_table(filename="periodic_table.txt")
-	pass
+def build_periodic_table(filename="periodic_table.txt"):
+	input_file = open(filename, 'r')
+	table = dict()
+	for element in input_file:
+		tokens = element.split()
+		table[tokens[2]] = (tokens[1], int(tokens[0]), float(tokens[3]))
+	return table
 ```
 
 
@@ -63,3 +68,72 @@ Please enter your choice:
 
 ### Quit - If user enters (4)
 Exit the program!
+
+
+## Sample Output
+While your output might not look **exactly** like mine, it should look close.  Here's a sample output - pay attention to the test cases, you should definately have the exact same **answers** as mine!
+
+```
+Loaded Periodic Table!
+1) Search by symbol/name
+2) Search by atomic mass
+3) Molecular Mass Calculation
+4) Quit
+Please enter choice:  2
+Please enter minimum mass:  10
+Please enter maximum mass:  20
+
+    #  Element name                  Sym  Mass 
+================================================================================
+    7  Nitrogen                      N    14.0067
+    9  Fluorine                      F    18.9984032
+    8  Oxygen                        O    15.9994
+    5  Boron                         B    10.811
+    6  Carbon                        C    12.0107
+================================================================================
+
+1) Search by symbol/name
+2) Search by atomic mass
+3) Molecular Mass Calculation
+4) Quit
+Please enter choice:  1
+Please enter search string:  g
+
+    #  Element name                  Sym  Mass 
+================================================================================
+   31  Gallium                       Ga   69.723
+    1  Hydrogen                      H    1.00794
+    7  Nitrogen                      N    14.0067
+   32  Germanium                     Ge   72.64
+  106  Seaborgium                    Sg   266.0
+   18  Argon                         Ar   39.948
+   80  Mercury                       Hg   200.59
+    8  Oxygen                        O    15.9994
+  111  Roentgenium                   Rg   272.0
+   64  Gadolinium                    Gd   157.25
+   25  Manganese                     Mn   54.938045
+   74  Tungsten                      W    183.84
+   47  Silver                        Ag   107.8682
+   12  Magnesium                     Mg   24.305
+   79  Gold                          Au   196.966569
+================================================================================
+
+1) Search by symbol/name
+2) Search by atomic mass
+3) Molecular Mass Calculation
+4) Quit
+Please enter choice:  3
+
+Enter atomic symbol of element:  Ba
+Enter number of atoms of Ba in molecule:  1
+Enter atomic symbol of element:  Cl
+Enter number of atoms of Cl in molecule:  2
+Enter atomic symbol of element:  .
+The molecular mass is  208.233
+
+1) Search by symbol/name
+2) Search by atomic mass
+3) Molecular Mass Calculation
+4) Quit
+Please enter choice:  4
+```
