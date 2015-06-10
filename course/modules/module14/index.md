@@ -12,6 +12,7 @@ Pages 84 - 90
 <iframe src="https://docs.google.com/presentation/d/1kgDOUk0HT3NW_sDjq-RAd3anTAFxh9YFdE9vZXuYbEY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/nX4QEf5_3T4" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #22](../../exercises/pe22) - Find first even number in a list
