@@ -1,6 +1,7 @@
 # CMPS 130 - Homework #2
 
 In this assign you'll write a program that allows a user to explore/search the periodic table of elements and compute the molecular mass of compounds.
+<img src="http://sciencenotes.org/wp-content/uploads/2014/05/PeriodicTableNeonBB.png" style="margin-bottom:1em;margin-top:1em; width:100%"/>
 
 ## Loading the data
 Download the text file - [periodic_table.txt](periodic_table.txt) - and save it in the same directory as your program.  The following function accepts the name of the file (defaults to "periodic_table.txt") and returns a dictionary object representing the periodic table.  The dictionary uses the atomic symbol of the element as the key, and the value is a tuple containing the element's name, its atomic number, its atomic mass.

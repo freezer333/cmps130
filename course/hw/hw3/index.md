@@ -1,6 +1,13 @@
 # CMPS 130 - Homework #3
+<img src="weather.jpg" style="float:right; vertical-align:middle;margin-left:1em;margin-bottom:1em; width:300px"/>
+
 For this assignment you will create a class that represents the rainfall data we've been working with in programming exercises [20](../../exercises/pe20/), [21](../../exercises/pe21/), and [23](../../exercises/pe23/).
 
+You are asked to implement several additional calculations based on rainfall data as methods of your class.  
+
+Please also be sure to review the sample "main" part of your program at the bottom of this page, as I will use this *exact* code to test your class.  Pay attention to detail - your methods must behave *exactly* as specified!
+
+<div style="clear:both"/>
 ## Part 1 (50 points)
 Design a class called `RainfallTable` which has an `__init__` function that accepts as a parameter a path to the rainfall data file.  For example, you'd instantiate an instance of the class like so:
 
