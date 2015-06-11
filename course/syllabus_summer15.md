@@ -104,6 +104,11 @@ There are four assigned homework problems, with due dates listed on moodle (and 
 | [Homework 2](hw/hw2/) | 7/18/2015 (Saturday night)
 | [Homework 3](hw/hw3/) | 8/01/2015 (Saturday night)
 | [Homework 4](hw/hw4/) | 8/06/2015 (Thursday night)
+| [Homework for CS Majors (*see below*)](hw/cs_elective/) | 8/06/2015 (Thursday night)
+
+**CS Majors** - If you are a computer science major, you may elect to complete the last "bonus" homework assignment.  If you complete it satisfactorily, you will be permitted to count this course as one of your required CS electives.  **Note - you do not need to take this option** if you are simply taking this course for credits, this is only necessary if you want this course to count specifically as a CS elective, or if you want this to be included in your computer science "major GPA".  If you complete this assignment, your homework grade (20% of course) will be averaged from all five completed assignments instead of four.
+
+**Non-CS Majors** - The extra 5th assignment is geared towards **CS majors only**, and requires you to work extensively in C++ as well as Python.  You should not view this as an extra credit opportunity, or anything like that.  If you wish, on your own time, to give it a try - enjoy!  You will learn a lot, but please do not view this as something your are in any way expected to work on as part of your course credit.
 
 ## Exams (Mid Term and Final)
 Midterm and Final Exams will be proctored, **meaning you will be required to come to campus twice during the five week semester**.  Special accommodations/waivers for this policy will be made on a case-by-case basis, typically for students who attend other institutions as their primary degree-granting school or Ramapo students who live beyond reasonable commuting distance (~1 hour) from campus.  **This must be negotiated with the instructor before July 10th**.  
