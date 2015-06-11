@@ -17,6 +17,7 @@ Chapter 12
 <iframe src="https://docs.google.com/presentation/d/162BhpBSrNTLwgzds83MjtoW-rEnYD8l3CODapxDxI-0/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/iuIydCjZ--g" frameborder="0" allowfullscreen></iframe>
 
 ### Programming Excercises
 - [Programming Exercise #27](../../exercises/pe26) - Predicting Rainfall and Droughts 
