@@ -3,7 +3,7 @@ If you are a Computer Science major wishing to count this course as one of your 
 
 ## The Algorithm
 
-
+This is an O(N<sup>2</sup>) algorithm, and is extremely resource intensive.  Interestingly, computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem.  Coincidentally, it has [recently been proven to be optimal](http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610)!
 ## Input 
 Read from two text files, two genomic sequences
 

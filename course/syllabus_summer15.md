@@ -104,7 +104,7 @@ There are four assigned homework problems, with due dates listed on moodle (and 
 | [Homework 2](hw/hw2/) | 7/18/2015 (Saturday night)
 | [Homework 3](hw/hw3/) | 8/01/2015 (Saturday night)
 | [Homework 4](hw/hw4/) | 8/06/2015 (Thursday night)
-| [Homework for CS Majors (*see below*)](hw/cs_elective/) | 8/06/2015 (Thursday night)
+| [Homework for CS Majors (*see below*)](hw/hw_cs_elective/) | 8/06/2015 (Thursday night)
 
 **CS Majors** - If you are a computer science major, you may elect to complete the last "bonus" homework assignment.  If you complete it satisfactorily, you will be permitted to count this course as one of your required CS electives.  **Note - you do not need to take this option** if you are simply taking this course for credits, this is only necessary if you want this course to count specifically as a CS elective, or if you want this to be included in your computer science "major GPA".  If you complete this assignment, your homework grade (20% of course) will be averaged from all five completed assignments instead of four.
 
