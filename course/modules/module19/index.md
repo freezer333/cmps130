@@ -15,6 +15,7 @@ Pages 125-130
 <iframe src="https://docs.google.com/presentation/d/1NKnQjWJvOkI7cre5FPIT1GQEo9-k46zA8UOvezX9McY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/wU0dmiSLze4" frameborder="0" allowfullscreen></iframe>
 
 ### Lecture Material
 [search.py](search.py)
