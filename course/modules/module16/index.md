@@ -15,6 +15,7 @@ Pages 99-103
 <iframe src="https://docs.google.com/presentation/d/1pRVKrwDBP92MvCMC3XgZIhNF3dvEpaD3i4jm1HJAsjk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/FWIkACVbsL0" frameborder="0" allowfullscreen></iframe>
 
 ### Lecture Materials
 [shapes.py from lecture slides](shapes.py)
