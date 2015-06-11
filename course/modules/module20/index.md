@@ -15,6 +15,7 @@ Pages 131-137
 <iframe src="https://docs.google.com/presentation/d/1uKB1hXQ7Mzu9VuPhu6KdnUaaSTYwUnlyQ9Q-FQcG8Dc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Lecture Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/CqQFxPI7bWU" frameborder="0" allowfullscreen></iframe>
 
 ### Lecture Material
 [sort.py](sort.py)
