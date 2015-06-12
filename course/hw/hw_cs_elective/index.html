@@ -109,11 +109,132 @@
 <h1 id="cmps-130-homework-cs-elective-requirement">CMPS 130 - Homework CS Elective Requirement</h1>
 <p><img src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/news_article_image_top_slideshow/public/images/2015/MIT-Quad-Genome.jpg?itok=qMwDyhOy" style="float:left; margin-right:1em; width:300px"/><br>If you are a Computer Science major wishing to count this course as one of your seven electives, you are required to complete the following additional assignment before the last day of the class.  As a computer science major, you already know C and C++ well (perhaps C++ more than C).  In this assignment you will implement a well known algorithm in computer science commonly used in genetics research in both Python and C++.  You will also evaluate the two, for both runtime efficiency and ease of programming.  The purpose of this assignment is for you to better understand the similarities, differences, and relative strengths of Python and C++ on a common problem.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
-<p>This is an O(N<sup>2</sup>) algorithm, and is extremely resource intensive.  Interestingly, computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem.  Coincidentally, it has <a href="http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610">recently been proven to be optimal</a>!</p>
-<h2 id="input">Input</h2>
+<p>You will implement an algorithm that calculates the <em>edit distance</em>, or more specifically, the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein_distanc</a> between two strings.  Tthe Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.</p>
+<p>There are several ways of calculating edit distance.  The widely accepted <em>best</em> algorithm is the Wagner–Fischer algorithm, which utilizes a 2-dimensional array to calculate the answer in O(N&dot;M) time, and O(N&dot;M) memory space - where N and M are the lengths of the two strings being compared.  When the strings are of similar length, you can think of the algorithm being O(N<sup>2</sup>).  No one has ever said O(N<sup>2</sup>) is fast (or efficient), but since all the other known algorithms are <em>exponential</em>, the Wagner-Fischer is widely adopted.  Computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem - but it has <a href="http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610">recently been proven to be optimal</a>!</p>
+<p>Here&#39;s how the algorithm goes:</p>
+<p>Input:  Two strings, S and T of length M and N respectively.</p>
+<h3 id="initialization">Initialization</h3>
+<ul>
+<li>Construct an (M+1) by (N+1) matrix (array) of integers in memory, called D.  Lets say it has N columns, M rows.</li>
+<li>Assign the values 0...N to the first row of the array, and 0..M to the first column.</li>
+</ul>
+<h3 id="processing">Processing</h3>
+<p>Starting at element [1,1], proceed down each column, working your way to the right after completing each column.  </p>
+<p>At each cell [i, j]:</p>
+<ul>
+<li>if S[i] is equal to T[j], then assign D[i,j] to be the value D[i-1, j-1].</li>
+<li>Otherwise, assign D[i, j] to be the <strong>minimum</strong> of the following three cells:<ul>
+<li>D[i-1, j] + 1  (representing a deletion)</li>
+<li>D[i, j-1] + 1  (representing an insertion)</li>
+<li>D[i-1, j-1] + 1 (representing a substitution)</li>
+</ul>
+</li>
+</ul>
+<h3 id="result">Result</h3>
+<p>Once you&#39;ve processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform S into T.</p>
+<h2 id="recording-the-actual-edits">Recording the actual edits</h2>
+<p>The algorithm above is fairly straightforward, however it only gives us the end result - the edit distance.  When comparing genetic sequences, its usually important to use the edit operations to construct a <em>sequence alignment</em>.  To do this, we not only need to create the matrix described above, but we need to record <em>which</em> operations would be performed along the way.</p>
+<p>To do this, you should make an auxilary array, E, of the same dimensions as D in the description above.  When assigning D[i, j], assign E[i, j] as the following:</p>
+<pre><code>* if S[i] is equal to T[j], then assign E[i,j] to be 0.
+* Otherwise, assign E[i, j] according to which D cell is used to derive the value of D[i, j] as follows:
+    * If D[i-1, j] was used, record 1
+    * If D[i, j-1] was used, record 2
+    * If D[i-1, j-1] was used, record 3
+</code></pre><p>As you may have guessed, the values 0, 1, 2, and 3 are codes for no change (0), deletion (1), insertion (2), and substitution (3).</p>
+<p>Once D and E have been constructed, you can now create <em>aligned</em> sequences, representing insert/delets with gaps (-) in the corresponding sequences by <em>backtracing</em> E. </p>
+<p>To print the aligned sequence S:</p>
+<h1 id="your-assignment">Your Assignment</h1>
+<p>For this assignment, you will write two programs that do the exact same thing - one in C++ and one in Python.</p>
+<p>Your programs should first accept two strings on the command line (see below for help with command line arguments), which represent the filename of two files.  Each of these files should just contain simple strings, I&#39;ve provided three sample sets - the first two are very small test files, helpful during debugging.  The third pair represents the NRAS genomic sequence in humans and in cows (these genes are involved in some cancers).</p>
+<ul>
+<li>Sample set 1 - <a href="s1.txt">S</a>, <a href="t1.txt">T</a></li>
+<li>Sample set 2 - <a href="s2.txt">S</a>, <a href="t2.txt">T</a></li>
+<li>Sample set 3 - <a href="nras_human.txt">Human NRAS</a>, <a href="nras_cow.txt">Cow NRAS</a></li>
+</ul>
+<p>Your program should open the files based on the command line arguments and read the strings (remove new line characters) into variables.</p>
+<p>Next, perform the Wagner-Fischer computation, including the backtracing procedure explained above.  </p>
+<p>Your program should print out the resulting aligned sequences/strings, and also print out the number of edits (the edit distance). You should also print the total elapsed run time of the processing.  See below for details on timing in C++, you already know how to do this in Python.</p>
+<p>Here is output of the first two samples.  Your program should have the exact same results, except of course for the elapsed time, which will be unique for your machine.  I compiled my C++ solution into a program named <code>editc</code>.  The Python version would print the same results (with a different time)</p>
+<pre><code>&gt; editc s1.txt s2.txt
+Input Sequences
+----------------------------
+Saturday
+Sunday
+----------------------------
+Aligned Sequences
+----------------------------
+Saturday
+S--unday
+----------------------------
+The minimum edit distance is 3
+Completed in 0.000100 seconds.
+</code></pre><pre><code>&gt; editc s2.txt s2.txt
+Input Sequences
+----------------------------
+GGAAGGGGCGATCGGAGGGC
+GGTAAGGGGCCTGATCGAAGGGCAA
+----------------------------
+Aligned Sequences
+----------------------------
+GG-AAGGGG-C-GATCGGAGGGC--
+GGTAAGGGGCCTGATCGAAGGGCAA
+----------------------------
+The minimum edit distance is 6
+Completed in 0.000129 seconds.
+</code></pre><h2 id="input">Input</h2>
 <p>Read from two text files, two genomic sequences</p>
 <h2 id="implementation-in-c-">Implementation in C++</h2>
-<h2 id="implementation-in-python">Implementation in Python</h2>
+<p>If you haven&#39;t used command line arguments before in C++, here&#39;s a code snippet to help you:</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argv, char ** argc) {
+    if ( argv &gt;= 3 ) {
+        cout &lt;&lt; argc[1] &lt;&lt; endl;
+        cout &lt;&lt; argc[2] &lt;&lt; endl;
+    }
+}
+</code></pre><p>If you run your program from the command line (lets say you compile it to be named <code>test</code>), you can enter two arguments and they will print to the screen.  These would be the filenames in your actual program...</p>
+<pre><code>&gt; test hello world
+hello
+world
+&gt;
+</code></pre><p>You may use and valid C or C++ to open the text files and read them into strings.  You can use any method of keeping track of time that you find convenient - here is a sample of how to do this with the standard C library.</p>
+<pre><code>#include &lt;ctime&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int start = clock();
+
+    for ( int i = 0; i &lt; 10000; i++ ) {
+        cout &lt;&lt; &quot;.&quot;;
+    }
+    cout &lt;&lt; endl;
+
+    int t = clock() - start;
+    cout &lt;&lt; &quot;Completed in &quot; &lt;&lt;((float)t)/CLOCKS_PER_SEC &lt;&lt; &quot; seconds.&quot; &lt;&lt; endl;;
+}
+</code></pre><h2 id="implementation-in-python">Implementation in Python</h2>
+<p>We haven&#39;t used command line arguments in python yet - but its really easy:</p>
+<pre><code>import sys
+
+for i in sys.argv[1:]:
+    print(i)
+</code></pre><p>Again, if you run your program (test.py), and enter command line arguments, they&#39;ll print to the screen</p>
+<pre><code>&gt; python3 test.py hello world
+hello
+world
+&gt;
+</code></pre><p>I will assume you know all about two-dimensional arrays in C++, but we haven&#39;t discussed them in Python.  There is no real concept for N-dimensional arrays built into Python (although <a href="http://www.numpy.org/">numpy</a> adds them).  Instead, you must use a <em>list of lists</em>.</p>
+<p>For example, you can create a 5x5 matrix in Python using the following syntax (all initialized to 0&#39;s)</p>
+<pre><code>rows = 5
+cols = 5
+matrix = [[0 for x in range(cols)] for x in range(rows)]
+</code></pre><p>You can then access each element using standard bracket notation:</p>
+<pre><code>matrix[3][2] = 1
+print(matrix)
+</code></pre><p>The code above prints <code>[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]</code></p>
 <h2 id="analysis">Analysis</h2>
 <h3 id="runtime-and-memory-efficiency">Runtime and memory efficiency</h3>
 <h3 id="programming-experience">Programming experience</h3>
