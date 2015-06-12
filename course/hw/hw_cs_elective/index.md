@@ -4,49 +4,65 @@
 If you are a Computer Science major wishing to count this course as one of your seven electives, you are required to complete the following additional assignment before the last day of the class.  As a computer science major, you already know C and C++ well (perhaps C++ more than C).  In this assignment you will implement a well known algorithm in computer science commonly used in genetics research in both Python and C++.  You will also evaluate the two, for both runtime efficiency and ease of programming.  The purpose of this assignment is for you to better understand the similarities, differences, and relative strengths of Python and C++ on a common problem.
 
 ## The Algorithm
-You will implement an algorithm that calculates the *edit distance*, or more specifically, the [Levenshtein_distanc](https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings.  Tthe Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.
+You will implement an algorithm that calculates the *edit distance*, or more specifically, the [Levenshtein_distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings.  Tthe Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.
+
+For example, we might examine the following short DNA sequences:
+```
+GGAAGGGGCGATCGGAGGGC
+GGTAAGGGGCCTGATCGAAGGGCAA
+```
+We can calculate the edit distance, and record insertions/deletions/substitutions in such a way that we can print a *aligned* set of sequences, with dashes representing misaligned symbols
+```
+GG-AAGGGG-C-GATCGGAGGGC--
+GGTAAGGGGCCTGATCGAAGGGCAA
+```
 
 There are several ways of calculating edit distance.  The widely accepted *best* algorithm is the Wagner–Fischer algorithm, which utilizes a 2-dimensional array to calculate the answer in O(N&dot;M) time, and O(N&dot;M) memory space - where N and M are the lengths of the two strings being compared.  When the strings are of similar length, you can think of the algorithm being O(N<sup>2</sup>).  No one has ever said O(N<sup>2</sup>) is fast (or efficient), but since all the other known algorithms are *exponential*, the Wagner-Fischer is widely adopted.  Computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem - but it has [recently been proven to be optimal](http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610)!
 
-Here's how the algorithm goes:
-
-Input:  Two strings, S and T of length M and N respectively.
+## Calculating Edit Distance
+Input:  Two strings, ACROSS and DOWN of length COLS and ROWS respectively.
 
 ### Initialization
-* Construct an (M+1) by (N+1) matrix (array) of integers in memory, called D.  Lets say it has N columns, M rows.
-* Assign the values 0...N to the first row of the array, and 0..M to the first column.
+* Construct an (ROWS+1) by (COLS+1) matrix (array) of integers in memory, called D.  
+* Assign the values 0...ROWS to the first row of the array, and 0..COLS to the first column.
 
 ### Processing
-Starting at element [1,1], proceed down each column, working your way to the right after completing each column.  
+Starting at element [1,1], proceed down each column, working your way to the right *after* completing each column.  
 
-At each cell [i, j]:
+At each cell [r, c]:
 
-* if S[i] is equal to T[j], then assign D[i,j] to be the value D[i-1, j-1].
-* Otherwise, assign D[i, j] to be the **minimum** of the following three cells:
-	* D[i-1, j] + 1  (representing a deletion)
-	* D[i, j-1] + 1  (representing an insertion)
-	* D[i-1, j-1] + 1 (representing a substitution)
+* if ACROSS[c] is equal to DOWN[r], then assign D[r,c] to be the value D[r-1, c-1].
+* Otherwise, assign D[r, c] to be the **minimum** of the following three values:
+	* D[r-1, j] + 1  (representing a deletion)
+	* D[r, c-1] + 1  (representing an insertion)
+	* D[r-1, c-1] + 1 (representing a substitution)
 
 ### Result
-Once you've processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform S into T.
+Once you've processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform ACROSS into DOWN.
 
 ## Recording the actual edits
 The algorithm above is fairly straightforward, however it only gives us the end result - the edit distance.  When comparing genetic sequences, its usually important to use the edit operations to construct a *sequence alignment*.  To do this, we not only need to create the matrix described above, but we need to record *which* operations would be performed along the way.
 
-To do this, you should make an auxilary array, E, of the same dimensions as D in the description above.  When assigning D[i, j], assign E[i, j] as the following:
+To do this, you should make an auxilary array, E, of the same dimensions as D in the description above.  When assigning D[r, c], assign E[r, c] as the following:
 
-	* if S[i] is equal to T[j], then assign E[i,j] to be 0.
-	* Otherwise, assign E[i, j] according to which D cell is used to derive the value of D[i, j] as follows:
-		* If D[i-1, j] was used, record 1
-		* If D[i, j-1] was used, record 2
-		* If D[i-1, j-1] was used, record 3
+* if ACROSS[c] is equal to DOWN[r], then assign E[r,c] to be 0 (representing the fact that the value is derived from the cell diagnoal from this cell (above and left).
+* Otherwise, assign E[r, c] according to which D cell is used to derive the value of D[r, c] as follows:
+	* If D[r-1, c] was used, record 1 (derived from cell above)
+	* If D[r, c-1] was used, record 2 (derived from cell to the left)
+	* If D[r-1, c-1] was used, record 0 (derived from cell diagonal to this one)
 
-As you may have guessed, the values 0, 1, 2, and 3 are codes for no change (0), deletion (1), insertion (2), and substitution (3).
+## Backtracing to obtain sequences with gaps inserted
+Once D and E have been constructed, you can now create *aligned* sequences, representing insert/deletes with gaps (-) in the corresponding sequences by *backtracing* E. 
 
-Once D and E have been constructed, you can now create *aligned* sequences, representing insert/delets with gaps (-) in the corresponding sequences by *backtracing* E. 
+Start with two empty strings, representing the final ACROSS and DOWN string.  Lets call them ACROSS_RESULT and DOWN_RESULT
 
-To print the aligned sequence S:
+Starting at the lower right of E (the same cell you got the edit distance from D), proceed as follows:
 
+* if the cell E[r][c] is 0, **prepend** ACROSS[c-1] to ACROSS_RESULT, **prepend** DOWN[r-1] to DOWN_RESULT, and decrement r and c
+* if the cell E[r][c] is 1, **prepend** ACROSS_RESULT with a '-', **prepend** DOWN[r-1] to DOWN_RESULT, and decrement r
+* if the cell E[r][c] is 2, **prepend** ACROSS[c-1] to ACROSS_RESULT, **prepend** DOWN_RESULT with a '-', and decrement c.
+
+Depending if you are using C++ or Python, this string building exercise might be done slightly different - but the point is that when you see a cell derived from the diagonal, you use characters from both inputs.  On a cell derived from the left, you place a gap in the up/down string, and if you see a cell derived from above, you place a gap in the left/right string.  You are building the string in reverse, and when r or c gets to 0, use the remaining characters from either the left/right or up/down string to finish off the process.
 
 # Your Assignment
 For this assignment, you will write two programs that do the exact same thing - one in C++ and one in Python.
@@ -96,39 +112,52 @@ The minimum edit distance is 6
 Completed in 0.000129 seconds.
 ```
 
-## Testing
+## Testing and Debugging
 Unless you have unusually impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..
 
 Sample 1
-
+```
+	   S  a  t  u  r  d  a  y
+=============================
+  | 0  1  2  3  4  5  6  7  8  
+S | 1  0  1  2  3  4  5  6  7  
+u | 2  1  1  2  2  3  4  5  6  
+n | 3  2  2  2  3  3  4  5  6  
+d | 4  3  3  3  3  4  3  4  5  
+a | 5  4  3  4  4  4  4  3  4  
+y | 6  5  4  4  5  5  5  4  3  
+```
 Sample 2
 ```
-0    1   2   3   4   5   6   7   8  9   10  11  12  13  14  15  16  17  18  19  20  
-1    0   1   2   3   4   5   6   7  8    9  10  11  12  13  14  15  16  17  18  19  
-2    1   0   1   2   3   4   5   6  7    8   9  10  11  12  13  14  15  16  17  18  
-3    2   1   1   2   3   4   5   6  7    8   9   9  10  11  12  13  14  15  16  17  
-4    3   2   1   1   2   3   4   5  6    7   8   9  10  11  12  12  13  14  15  16  
-5    4   3   2   1   2   3   4   5  6    7   7   8   9  10  11  12  13  14  15  16  
-6    5   4   3   2   1   2   3   4  5    6   7   8   9   9  10  11  12  13  14  15  
-7    6   5   4   3   2   1   2   3  4    5   6   7   8   9   9  10  11  12  13  14  
-8    7   6   5   4   3   2   1   2  3    4   5   6   7   8   9  10  10  11  12  13  
-9    8   7   6   5   4   3   2   1  2    3   4   5   6   7   8   9  10  10  11  12  
-10   9   8   7   6   5   4   3   2  1    2   3   4   5   6   7   8   9  10  11  11  
-11  10   9   8   7   6   5   4   3  2    2   3   4   4   5   6   7   8   9  10  11  
-12  11  10   9   8   7   6   5   4  3    3   3   3   4   5   6   7   8   9  10  11  
-13  12  11  10   9   8   7   6   5  4    3   4   4   4   4   5   6   7   8   9  10  
-14  13  12  11  10   9   8   7   6  5    4   3   4   5   5   5   5   6   7   8   9  
-15  14  13  12  11  10   9   8   7  6    5   4   3   4   5   6   6   6   7   8   9  
-16  15  14  13  12  11  10   9   8  7    6   5   4   3   4   5   6   7   7   8   8  
-17  16  15  14  13  12  11  10   9  8    7   6   5   4   3   4   5   6   7   7   8  
-18  17  16  15  14  13  12  11  10  9    8   7   6   5   4   4   4   5   6   7   8  
-19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7   8  
-20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7  
-21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   6   5   4   5   6  
-22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   7   6   5   4   5  
-23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5   4  
-24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5  
-25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   9   8   7   6  
+
+	     G   G   A   A   G   G   G   G  C    G   A   T   C   G   G   A   G   G   G   C
+======================================================================================
+  | 0    1   2   3   4   5   6   7   8  9   10  11  12  13  14  15  16  17  18  19  20
+G | 1    0   1   2   3   4   5   6   7  8    9  10  11  12  13  14  15  16  17  18  19    
+G | 2    1   0   1   2   3   4   5   6  7    8   9  10  11  12  13  14  15  16  17  18
+T | 3    2   1   1   2   3   4   5   6  7    8   9   9  10  11  12  13  14  15  16  17    
+A | 4    3   2   1   1   2   3   4   5  6    7   8   9  10  11  12  12  13  14  15  16  
+A | 5    4   3   2   1   2   3   4   5  6    7   7   8   9  10  11  12  13  14  15  16  
+G | 6    5   4   3   2   1   2   3   4  5    6   7   8   9   9  10  11  12  13  14  15  
+G | 7    6   5   4   3   2   1   2   3  4    5   6   7   8   9   9  10  11  12  13  14  
+G | 8    7   6   5   4   3   2   1   2  3    4   5   6   7   8   9  10  10  11  12  13  
+G | 9    8   7   6   5   4   3   2   1  2    3   4   5   6   7   8   9  10  10  11  12  
+C | 10   9   8   7   6   5   4   3   2  1    2   3   4   5   6   7   8   9  10  11  11  
+C | 11  10   9   8   7   6   5   4   3  2    2   3   4   4   5   6   7   8   9  10  11  
+T | 12  11  10   9   8   7   6   5   4  3    3   3   3   4   5   6   7   8   9  10  11  
+G | 13  12  11  10   9   8   7   6   5  4    3   4   4   4   4   5   6   7   8   9  10  
+A | 14  13  12  11  10   9   8   7   6  5    4   3   4   5   5   5   5   6   7   8   9  
+T | 15  14  13  12  11  10   9   8   7  6    5   4   3   4   5   6   6   6   7   8   9  
+C | 16  15  14  13  12  11  10   9   8  7    6   5   4   3   4   5   6   7   7   8   8  
+G | 17  16  15  14  13  12  11  10   9  8    7   6   5   4   3   4   5   6   7   7   8  
+A | 18  17  16  15  14  13  12  11  10  9    8   7   6   5   4   4   4   5   6   7   8  
+A | 19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7   8  
+G | 20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7  
+G | 21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   6   5   4   5   6  
+G | 22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   7   6   5   4   5  
+C | 23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5   4  
+A | 24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5  
+A | 25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   9   8   7   6  
 ```
 
 ## Implementation in C++
@@ -213,6 +242,11 @@ print(matrix)
 ```
 The code above prints `[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]`
 
-## Analysis
-### Runtime and memory efficiency
-### Programming experience
+## Grading
+| | | 
+|--|--|
+|C++ Edit Distance | 30%|
+|Python Edit Distance | 30%|
+|C++ Backtrace/Alignment Printout|15%|
+|Python Backtrace/Alignment Printout|15%|
+|Overall Code Quality|10%|
