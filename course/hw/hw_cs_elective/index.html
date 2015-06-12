@@ -118,48 +118,37 @@ GGTAAGGGGCCTGATCGAAGGGCAA
 GGTAAGGGGCCTGATCGAAGGGCAA
 </code></pre><p>There are several ways of calculating edit distance.  The widely accepted <em>best</em> algorithm is the Wagner–Fischer algorithm, which utilizes a 2-dimensional array to calculate the answer in O(N&dot;M) time, and O(N&dot;M) memory space - where N and M are the lengths of the two strings being compared.  When the strings are of similar length, you can think of the algorithm being O(N<sup>2</sup>).  No one has ever said O(N<sup>2</sup>) is fast (or efficient), but since all the other known algorithms are <em>exponential</em>, the Wagner-Fischer is widely adopted.  Computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem - but it has <a href="http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610">recently been proven to be optimal</a>!</p>
 <h2 id="calculating-edit-distance">Calculating Edit Distance</h2>
-<p>Input:  Two strings, ACROSS and DOWN of length COLS and ROWS respectively.</p>
-<h3 id="initialization">Initialization</h3>
-<ul>
-<li>Construct an (ROWS+1) by (COLS+1) matrix (array) of integers in memory, called D.  </li>
-<li>Assign the values 0...ROWS to the first row of the array, and 0..COLS to the first column.</li>
-</ul>
-<h3 id="processing">Processing</h3>
+<pre><code>* Input:  Two strings, S and T
+* Construct an M x N matrix (array) of integers in memory, called D, 
+  where M is equal to the length of S + 1, and N is equal to the length of T + 1. 
+* Assign the values 0...M to the first row of the array, and 0..N to the first column.
+</code></pre><h3 id="processing">Processing</h3>
 <p>Starting at element [1,1], proceed down each column, working your way to the right <em>after</em> completing each column.  </p>
-<p>At each cell [r, c]:</p>
-<ul>
-<li>if ACROSS[c] is equal to DOWN[r], then assign D[r,c] to be the value D[r-1, c-1].</li>
-<li>Otherwise, assign D[r, c] to be the <strong>minimum</strong> of the following three values:<ul>
-<li>D[r-1, j] + 1  (representing a deletion)</li>
-<li>D[r, c-1] + 1  (representing an insertion)</li>
-<li>D[r-1, c-1] + 1 (representing a substitution)</li>
-</ul>
-</li>
-</ul>
-<h3 id="result">Result</h3>
-<p>Once you&#39;ve processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform ACROSS into DOWN.</p>
+<pre><code>At each cell [i,j]:
+* if S[j] is equal to T[i], then assign D[i,j] to be the value D[i-1, j-1].
+* Otherwise, assign D[i, j] to be the **minimum** of the following three values:
+    * D[i-1, j] + 1  (representing a deletion)
+    * D[i, j-1] + 1  (representing an insertion)
+    * D[i-1, j-1] + 1 (representing a substitution)
+</code></pre><h3 id="result">Result</h3>
+<p>Once you&#39;ve processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform S into T.</p>
 <h2 id="recording-the-actual-edits">Recording the actual edits</h2>
 <p>The algorithm above is fairly straightforward, however it only gives us the end result - the edit distance.  When comparing genetic sequences, its usually important to use the edit operations to construct a <em>sequence alignment</em>.  To do this, we not only need to create the matrix described above, but we need to record <em>which</em> operations would be performed along the way.</p>
-<p>To do this, you should make an auxilary array, E, of the same dimensions as D in the description above.  When assigning D[r, c], assign E[r, c] as the following:</p>
-<ul>
-<li>if ACROSS[c] is equal to DOWN[r], then assign E[r,c] to be 0 (representing the fact that the value is derived from the cell diagnoal from this cell (above and left).</li>
-<li>Otherwise, assign E[r, c] according to which D cell is used to derive the value of D[r, c] as follows:<ul>
-<li>If D[r-1, c] was used, record 1 (derived from cell above)</li>
-<li>If D[r, c-1] was used, record 2 (derived from cell to the left)</li>
-<li>If D[r-1, c-1] was used, record 0 (derived from cell diagonal to this one)</li>
-</ul>
-</li>
-</ul>
-<h2 id="backtracing-to-obtain-sequences-with-gaps-inserted">Backtracing to obtain sequences with gaps inserted</h2>
+<p>To do this, you should make an auxilary array, E, of the same dimensions as D in the description above.  When assigning D[i, j], assign E[i, j] as the following:</p>
+<pre><code>* if S[j] is equal to T[i], then assign E[i, j] to be 0, 
+  (representing the fact that the value is derived from the cell diagnoal from this cell (above and left).
+* Otherwise, assign E[i, j] according to which D cell is used to derive the value of D[i, j] as follows:
+    * If D[i-1, j] was used, record 1 (derived from cell above)
+    * If D[i, j-1] was used, record 2 (derived from cell to the left)
+    * If D[i-1, j-1] was used, record 0 (derived from cell diagonal to this one)
+</code></pre><h2 id="backtracing-to-obtain-sequences-with-gaps-inserted">Backtracing to obtain sequences with gaps inserted</h2>
 <p>Once D and E have been constructed, you can now create <em>aligned</em> sequences, representing insert/deletes with gaps (-) in the corresponding sequences by <em>backtracing</em> E. </p>
-<p>Start with two empty strings, representing the final ACROSS and DOWN string.  Lets call them ACROSS_RESULT and DOWN_RESULT</p>
+<p>Start with two empty strings, representing the final S and T string.  Lets call them S_RESULT and T_RESULT</p>
 <p>Starting at the lower right of E (the same cell you got the edit distance from D), proceed as follows:</p>
-<ul>
-<li>if the cell E[r][c] is 0, <strong>prepend</strong> ACROSS[c-1] to ACROSS_RESULT, <strong>prepend</strong> DOWN[r-1] to DOWN_RESULT, and decrement r and c</li>
-<li>if the cell E[r][c] is 1, <strong>prepend</strong> ACROSS_RESULT with a &#39;-&#39;, <strong>prepend</strong> DOWN[r-1] to DOWN_RESULT, and decrement r</li>
-<li>if the cell E[r][c] is 2, <strong>prepend</strong> ACROSS[c-1] to ACROSS_RESULT, <strong>prepend</strong> DOWN_RESULT with a &#39;-&#39;, and decrement c.</li>
-</ul>
-<p>Depending if you are using C++ or Python, this string building exercise might be done slightly different - but the point is that when you see a cell derived from the diagonal, you use characters from both inputs.  On a cell derived from the left, you place a gap in the up/down string, and if you see a cell derived from above, you place a gap in the left/right string.  You are building the string in reverse, and when r or c gets to 0, use the remaining characters from either the left/right or up/down string to finish off the process.</p>
+<pre><code>* if the cell E[i, j] is 0, **prepend** S[j-1] to S_RESULT, **prepend** T[i-1] to T_RESULT, and decrement i and j
+* if the cell E[i, j] is 1, **prepend** S_RESULT with a &#39;-&#39;, **prepend** T[i-1] to T_RESULT, and decrement i
+* if the cell E[i, j] is 2, **prepend** S[j-1] to S_RESULT, **prepend** T_RESULT with a &#39;-&#39;, and decrement j.
+</code></pre><p>Depending if you are using C++ or Python, this string building exercise might be done slightly different - but the point is that when you see a cell derived from the diagonal, you use characters from both inputs.  On a cell derived from the left, you place a gap in the up/down string, and if you see a cell derived from above, you place a gap in the left/right string.  You are building the string in reverse, and when r or c gets to 0, use the remaining characters from either the left/right or up/down string to finish off the process.</p>
 <h1 id="your-assignment">Your Assignment</h1>
 <p>For this assignment, you will write two programs that do the exact same thing - one in C++ and one in Python.</p>
 <p>Your programs should first accept two strings on the command line (see below for help with command line arguments), which represent the filename of two files.  Each of these files should just contain simple strings, I&#39;ve provided three sample sets - the first two are very small test files, helpful during debugging.  The third pair represents the NRAS genomic sequence in humans and in cows (these genes are involved in some cancers).</p>
