@@ -10,6 +10,7 @@ Print out the largest odd number they entered.  If they didn't enter any odd num
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/7fF6ngtIEAU" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe5.py](pe5.py)
