@@ -10,6 +10,7 @@ In order to qualify for a particular loan, lets assume you must earn over $60K a
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/4pmso324ea0" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe4.py](pe4.py)
