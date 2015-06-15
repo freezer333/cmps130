@@ -6,6 +6,7 @@ Write a program that asks the user for a numeric grade.  Use a series of branchi
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/IJ7Wg3t6QA8" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe2.py](pe2.py)
