@@ -8,6 +8,7 @@ Write a function `isIn` that accepts two strings as arguments and returns `True`
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/FPwyrYHg3bM" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe12.py](pe12.py)
