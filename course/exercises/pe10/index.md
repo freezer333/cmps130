@@ -15,6 +15,10 @@ Computing the square root of a number is a well studied mathematical problem, an
 Part 1 - Exhaustive Enumeration
 <iframe width="420" height="315" src="https://www.youtube.com/embed/bPIPsZNs2Gs" frameborder="0" allowfullscreen></iframe>
 
+Part 2 - Bisection
+<iframe width="420" height="315" src="https://www.youtube.com/embed/JHIRg1TaOqw" frameborder="0" allowfullscreen></iframe>
+
+
 ### Solution Code
 [pe10-enumeration.py](pe10-enumeration.py)
 [pe10-bisection.py](pe10-bisection.py)
