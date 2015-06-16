@@ -12,6 +12,8 @@ Computing the square root of a number is a well studied mathematical problem, an
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+Part 1 - Exhaustive Enumeration
+<iframe width="420" height="315" src="https://www.youtube.com/embed/bPIPsZNs2Gs" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe10-enumeration.py](pe10-enumeration.py)
