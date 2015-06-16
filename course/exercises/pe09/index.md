@@ -14,6 +14,8 @@ PI = 4 * ( 1 - 1/3 + 1/5 - 1/7 + 1/9 -1/11 +…)
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/LQTOcln0Gl8" frameborder="0" allowfullscreen></iframe>
+
 
 ### Solution Code
 [pe9.py](pe9.py)
