@@ -18,6 +18,8 @@ Part 1 - Exhaustive Enumeration
 Part 2 - Bisection
 <iframe width="420" height="315" src="https://www.youtube.com/embed/JHIRg1TaOqw" frameborder="0" allowfullscreen></iframe>
 
+Part 3 - Newton-Raphson
+<iframe width="420" height="315" src="https://www.youtube.com/embed/hYb7-xD4NZU" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe10-enumeration.py](pe10-enumeration.py)
