@@ -24,6 +24,7 @@ A = 5, B = 5,  C = 6 should give you no roots
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/o1cf_kG2c10" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe18.py](pe18.py)
