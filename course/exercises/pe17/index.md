@@ -11,6 +11,7 @@ Ensure that the entire contents of the journal are preserved!
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/iR63XwMr6KQ" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe17.py](pe17.py)
