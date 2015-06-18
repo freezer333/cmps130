@@ -109,8 +109,7 @@
 <h1 id="cmps-130-homework-cs-elective-requirement">CMPS 130 - Homework CS Elective Requirement</h1>
 <p><img src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/news_article_image_top_slideshow/public/images/2015/MIT-Quad-Genome.jpg?itok=qMwDyhOy" style="float:left; margin-right:1em; width:300px"/><br>If you are a Computer Science major wishing to count this course as one of your seven electives, you are required to complete the following additional assignment before the last day of the class.  As a computer science major, you already know C and C++ well (perhaps C++ more than C).  In this assignment you will implement a well known algorithm in computer science commonly used in genetics research in both Python and C++.  You will also evaluate the two, for both runtime efficiency and ease of programming.  The purpose of this assignment is for you to better understand the similarities, differences, and relative strengths of Python and C++ on a common problem.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
-<<<<<<< HEAD
-<p>You will implement an algorithm that calculates the <em>edit distance</em>, or more specifically, the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein_distance</a> between two strings.  Tthe Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.</p>
+<p>You will implement an algorithm that calculates the <em>edit distance</em>, or more specifically, the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein Distance</a> between two strings.  The Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.</p>
 <p>For example, we might examine the following short DNA sequences:</p>
 <pre><code>GGAAGGGGCGATCGGAGGGC
 GGTAAGGGGCCTGATCGAAGGGCAA
@@ -132,30 +131,6 @@ GGTAAGGGGCCTGATCGAAGGGCAA
     * D[i, j-1] + 1  (representing an insertion)
     * D[i-1, j-1] + 1 (representing a substitution)
 </code></pre><h3 id="result">Result</h3>
-=======
-<p>You will implement an algorithm that calculates the <em>edit distance</em>, or more specifically, the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein_distance</a> between two strings.  The Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.</p>
-<p>There are several ways of calculating edit distance.  The widely accepted <em>best</em> algorithm is the Wagner–Fischer algorithm, which utilizes a 2-dimensional array to calculate the answer in O(N&dot;M) time, and O(N&dot;M) memory space - where N and M are the lengths of the two strings being compared.  When the strings are of similar length, you can think of the algorithm being O(N<sup>2</sup>).  No one has ever said O(N<sup>2</sup>) is fast (or efficient), but since all the other known algorithms are <em>exponential</em>, the Wagner-Fischer is widely adopted.  Computer scientists have been debating for decades whether there exists a better (more efficient) algorithm for this type of problem - but it has <a href="http://newsoffice.mit.edu/2015/algorithm-genome-best-possible-0610">recently been proven to be optimal</a>!</p>
-<p>Here&#39;s how the algorithm goes:</p>
-<p>Input:  Two strings, S and T of length M and N respectively.</p>
-<h3 id="initialization">Initialization</h3>
-<ul>
-<li>Construct an (M+1) by (N+1) matrix (array) of integers in memory, called D.  Lets say it has N columns, M rows.</li>
-<li>Assign the values 0...N to the first row of the array, and 0..M to the first column.</li>
-</ul>
-<h3 id="processing">Processing</h3>
-<p>Starting at element [1,1], proceed down each column, working your way to the right after completing each column.  </p>
-<p>At each cell [i, j]:</p>
-<ul>
-<li>if S[i] is equal to T[j], then assign D[i,j] to be the value D[i-1, j-1].</li>
-<li>Otherwise, assign D[i, j] to be the <strong>minimum</strong> of the following three cells:<ul>
-<li>D[i-1, j] + 1  (representing a deletion)</li>
-<li>D[i, j-1] + 1  (representing an insertion)</li>
-<li>D[i-1, j-1] + 1 (representing a substitution)</li>
-</ul>
-</li>
-</ul>
-<h3 id="result">Result</h3>
->>>>>>> 055fa5ec229196f33f1e89b8f968097add621f97
 <p>Once you&#39;ve processed all the cells, the bottom right-most cell contains the (optimal) total number of edits to transform S into T.</p>
 <h2 id="recording-the-actual-edits">Recording the actual edits</h2>
 <p>The algorithm above is fairly straightforward, however it only gives us the end result - the edit distance.  When comparing genetic sequences, its usually important to use the edit operations to construct a <em>sequence alignment</em>.  To do this, we not only need to create the matrix described above, but we need to record <em>which</em> operations would be performed along the way.</p>
@@ -212,9 +187,14 @@ GGTAAGGGGCCTGATCGAAGGGCAA
 ----------------------------
 The minimum edit distance is 6
 Completed in 0.000129 seconds.
-<<<<<<< HEAD
-</code></pre><h2 id="testing-and-debugging">Testing and Debugging</h2>
-<p>Unless you have unusually impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..</p>
+</code></pre><h2 id="analysis-report">Analysis Report</h2>
+<p>As part of this assignment, I also ask that you turn in a short (1 page) writeup on your findings regarding efficiency and programming experience of C++ relative to Python.</p>
+<h3 id="runtime-and-memory-efficiency">Runtime and memory efficiency</h3>
+<p>It will likely come as no surprise which language is faster once you run them, but I&#39;d like you to explain the performance difference - why is one faster than the other?  Is there any way to mitigate these problems in the slower language?</p>
+<h3 id="programming-experience">Programming experience</h3>
+<p>Please comment on which language you found more convenient to write the program in. Which parts of the program were easier to write with a particular language?</p>
+<h2 id="testing">Testing</h2>
+<p>Unless you have <em>unusually</em> impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..</p>
 <p>Sample 1</p>
 <pre><code>       S  a  t  u  r  d  a  y
 =============================
@@ -255,44 +235,6 @@ G | 22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   7   6   5  
 C | 23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5   4  
 A | 24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5  
 A | 25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   9   8   7   6
-=======
-</code></pre><h2 id="analysis-report">Analysis Report</h2>
-<p>As part of this assignment, I also ask that you turn in a short (1 page) writeup on your findings regarding efficiency and programming experience of C++ relative to Python.</p>
-<h3 id="runtime-and-memory-efficiency">Runtime and memory efficiency</h3>
-<p>It will likely come as no surprise which language is faster once you run them, but I&#39;d like you to explain the performance difference - why is one faster than the other?  Is there any way to mitigate these problems in the slower language?</p>
-<h3 id="programming-experience">Programming experience</h3>
-<p>Please comment on which language you found more convenient to write the program in. Which parts of the program were easier to write with a particular language?</p>
-<h2 id="testing">Testing</h2>
-<p>Unless you have <em>unusually</em> impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..</p>
-<p>Sample 1</p>
-<p>Sample 2</p>
-<pre><code>0    1   2   3   4   5   6   7   8  9   10  11  12  13  14  15  16  17  18  19  20  
-1    0   1   2   3   4   5   6   7  8    9  10  11  12  13  14  15  16  17  18  19  
-2    1   0   1   2   3   4   5   6  7    8   9  10  11  12  13  14  15  16  17  18  
-3    2   1   1   2   3   4   5   6  7    8   9   9  10  11  12  13  14  15  16  17  
-4    3   2   1   1   2   3   4   5  6    7   8   9  10  11  12  12  13  14  15  16  
-5    4   3   2   1   2   3   4   5  6    7   7   8   9  10  11  12  13  14  15  16  
-6    5   4   3   2   1   2   3   4  5    6   7   8   9   9  10  11  12  13  14  15  
-7    6   5   4   3   2   1   2   3  4    5   6   7   8   9   9  10  11  12  13  14  
-8    7   6   5   4   3   2   1   2  3    4   5   6   7   8   9  10  10  11  12  13  
-9    8   7   6   5   4   3   2   1  2    3   4   5   6   7   8   9  10  10  11  12  
-10   9   8   7   6   5   4   3   2  1    2   3   4   5   6   7   8   9  10  11  11  
-11  10   9   8   7   6   5   4   3  2    2   3   4   4   5   6   7   8   9  10  11  
-12  11  10   9   8   7   6   5   4  3    3   3   3   4   5   6   7   8   9  10  11  
-13  12  11  10   9   8   7   6   5  4    3   4   4   4   4   5   6   7   8   9  10  
-14  13  12  11  10   9   8   7   6  5    4   3   4   5   5   5   5   6   7   8   9  
-15  14  13  12  11  10   9   8   7  6    5   4   3   4   5   6   6   6   7   8   9  
-16  15  14  13  12  11  10   9   8  7    6   5   4   3   4   5   6   7   7   8   8  
-17  16  15  14  13  12  11  10   9  8    7   6   5   4   3   4   5   6   7   7   8  
-18  17  16  15  14  13  12  11  10  9    8   7   6   5   4   4   4   5   6   7   8  
-19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7   8  
-20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   5   4   5   6   7  
-21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   6   5   4   5   6  
-22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   7   6   5   4   5  
-23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5   4  
-24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   8   7   6   5  
-25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10   9   9   8   7   6
->>>>>>> 055fa5ec229196f33f1e89b8f968097add621f97
 </code></pre><h2 id="implementation-in-c-">Implementation in C++</h2>
 <p>If you haven&#39;t used command line arguments before in C++, here&#39;s a code snippet to help you:</p>
 <pre><code>#include &lt;iostream&gt;
@@ -345,7 +287,6 @@ matrix = [[0 for x in range(cols)] for x in range(rows)]
 <pre><code>matrix[3][2] = 1
 print(matrix)
 </code></pre><p>The code above prints <code>[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]</code></p>
-<<<<<<< HEAD
 <h2 id="grading">Grading</h2>
 <table>
 <thead>
@@ -377,6 +318,4 @@ print(matrix)
 </tr>
 </tbody>
 </table>
-=======
->>>>>>> 055fa5ec229196f33f1e89b8f968097add621f97
 </html>
