@@ -96,8 +96,17 @@ The minimum edit distance is 6
 Completed in 0.000129 seconds.
 ```
 
+## Analysis Report
+As part of this assignment, I also ask that you turn in a short (1 page) writeup on your findings regarding efficiency and programming experience of C++ relative to Python.
+
+### Runtime and memory efficiency
+It will likely come as no surprise which language is faster once you run them, but I'd like you to explain the performance difference - why is one faster than the other?  Is there any way to mitigate these problems in the slower language?
+
+### Programming experience
+Please comment on which language you found more convenient to write the program in. Which parts of the program were easier to write with a particular language?
+
 ## Testing
-Unless you have unusually impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..
+Unless you have *unusually* impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..
 
 Sample 1
 
@@ -176,8 +185,6 @@ int main() {
 
 ```
 ## Implementation in Python
-
-
 We haven't used command line arguments in python yet - but its really easy:
 
 ```
@@ -213,6 +220,3 @@ print(matrix)
 ```
 The code above prints `[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]`
 
-## Analysis
-### Runtime and memory efficiency
-### Programming experience
