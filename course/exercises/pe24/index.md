@@ -39,6 +39,7 @@ print(p1.evaluate(10)) # prints 156
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/UKO7frD2fG4" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe24.py](pe24.py)

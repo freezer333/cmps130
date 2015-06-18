@@ -18,6 +18,8 @@ So, `fib(5)` should return `8`, and `fib(8)` should return `34`.
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/OLwNMTnhP2o" frameborder="0" allowfullscreen></iframe>
+
 
 ### Solution Code
 [pe14.py](pe14.py)

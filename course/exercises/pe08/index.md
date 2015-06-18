@@ -25,6 +25,7 @@ So, for N = 4
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/yilAdew37gw" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe8.py](pe8.py)

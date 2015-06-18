@@ -13,6 +13,7 @@ You can get the actual data here from [Rutgers](http://climate.rutgers.edu/state
 ** This is the first *really* challenging programming example where you need to think about data organization.  Don't be discouraged and if you get stuck watch the solution video! **
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/yB81SPBBGqs" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe20.py](pe20.py)

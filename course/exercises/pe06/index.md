@@ -9,6 +9,7 @@ Don’t let them stop until they’ve entered 5 of them!
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/BGryqOJPWfI" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe6.py](pe6.py)

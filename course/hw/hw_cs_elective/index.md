@@ -4,7 +4,11 @@
 If you are a Computer Science major wishing to count this course as one of your seven electives, you are required to complete the following additional assignment before the last day of the class.  As a computer science major, you already know C and C++ well (perhaps C++ more than C).  In this assignment you will implement a well known algorithm in computer science commonly used in genetics research in both Python and C++.  You will also evaluate the two, for both runtime efficiency and ease of programming.  The purpose of this assignment is for you to better understand the similarities, differences, and relative strengths of Python and C++ on a common problem.
 
 ## The Algorithm
+<<<<<<< HEAD
 You will implement an algorithm that calculates the *edit distance*, or more specifically, the [Levenshtein_distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings.  Tthe Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.
+=======
+You will implement an algorithm that calculates the *edit distance*, or more specifically, the [Levenshtein_distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings.  The Levenshtein distance between two strings is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one string into the other.  This is particularly useful when studying the similarity between genes from different organisms.  DNA sequences conserved (small edit distance) across species are likely to be functionally important, while variations between members of the same species can indicate different susceptibilities to disease.
+>>>>>>> 055fa5ec229196f33f1e89b8f968097add621f97
 
 For example, we might examine the following short DNA sequences:
 ```
@@ -115,8 +119,17 @@ The minimum edit distance is 6
 Completed in 0.000129 seconds.
 ```
 
-## Testing and Debugging
-Unless you have unusually impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..
+## Analysis Report
+As part of this assignment, I also ask that you turn in a short (1 page) writeup on your findings regarding efficiency and programming experience of C++ relative to Python.
+
+### Runtime and memory efficiency
+It will likely come as no surprise which language is faster once you run them, but I'd like you to explain the performance difference - why is one faster than the other?  Is there any way to mitigate these problems in the slower language?
+
+### Programming experience
+Please comment on which language you found more convenient to write the program in. Which parts of the program were easier to write with a particular language?
+
+## Testing
+Unless you have *unusually* impressive skills, you might not get this to work the first time your run your program.   Below is the actual matrix that would be generated for Samples 1 and 2.  You might want to print yours out, so you can compare to see what could be going wrong..
 
 Sample 1
 ```
@@ -208,8 +221,6 @@ int main() {
 
 ```
 ## Implementation in Python
-
-
 We haven't used command line arguments in python yet - but its really easy:
 
 ```
@@ -245,6 +256,7 @@ print(matrix)
 ```
 The code above prints `[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]`
 
+
 ## Grading
 | | | 
 |--|--|
@@ -253,3 +265,5 @@ The code above prints `[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0
 |C++ Backtrace/Alignment Printout|15%|
 |Python Backtrace/Alignment Printout|15%|
 |Overall Code Quality|10%|
+=======
+

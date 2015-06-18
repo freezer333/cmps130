@@ -16,6 +16,7 @@ Modify the program to handle these problems more gracefully.  Also, let users ty
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Ko3atgAYeMM" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe23.py](pe23.py)

@@ -17,6 +17,7 @@ Ignore case, and do not allow any non-alphabetical characters to interfere with 
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/d03vzGLlh28" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe15.py](pe15.py)

@@ -9,6 +9,7 @@ Using a function to print each line, write a program that accepts a positive num
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/H47QwuyPzRg" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe11.py](pe11.py)

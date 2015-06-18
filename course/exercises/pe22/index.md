@@ -9,6 +9,7 @@ Raise an exception if the list does not have an even number.
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/fO_ihoPv5EY" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe22.py](pe22.py)

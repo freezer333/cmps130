@@ -20,7 +20,6 @@ def fib(n):
 def fib_iteratively(n):
     n0 = 1
     n1 = 1
-    total = 1
     for i in range(2, n):
         t = n1
         n1 = t + n0
