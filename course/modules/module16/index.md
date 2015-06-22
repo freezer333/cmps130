@@ -20,5 +20,8 @@ Pages 99-103
 ### Lecture Materials
 [shapes.py from lecture slides](shapes.py)
 
+### Programming Excercises
+- [Programming Exercise #25](../../exercises/pe25) - Drawing Shapes
+
 
 
