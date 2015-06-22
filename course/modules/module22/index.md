@@ -7,7 +7,8 @@ This module augments chapter 11 in the textbook and will help you get started us
 
 <div class="highlight">** Important -  ** my lecture slides only augment the textbook, you will need to read it thoroughly to learn about using PyLab.  For an additional example, take a look at programming excercise 26 below. There are also additional links to documentation and tutorials. 
 
-Welcome to programming - you'll need to get really good at picking up new packages and learning to use them on your own!  The good news is you have all the programming skills necessary at this point!</div>
+Welcome to programming - you'll need to get really good at picking up new packages and learning to use them on your own!  The good news is you have all the programming skills necessary at this point!
+</div>
 
 ### Textbook Reading
 Chapter 11
