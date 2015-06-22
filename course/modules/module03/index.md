@@ -26,4 +26,4 @@ Pages 14-16
 [Programming Exercise #3](../../exercises/pe03) - Calculating shipping cost
 [Programming Exercise #4](../../exercises/pe04) - Loan approval criteria
 
-### Material
+
