@@ -14,6 +14,7 @@ In this example we'll use the [ezgraphics](http://www.ezgraphics.org/) to actual
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/40iK-Kqz_Ak" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe25.py](pe25.py)
