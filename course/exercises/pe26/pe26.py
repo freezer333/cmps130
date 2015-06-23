@@ -17,17 +17,35 @@ def build_table():
     f.close()
     return table;
 
-def find_average(year_table, month) :
+def get_all_years(year_table, month):
     # each element in year_table is a tuple with two entries
     # entry 0 is the year
     # entry 1 is the list of monthly rainfalls for the year
     # so compile a list of only the specific month from all years
-    all_years = [ year_table[year][month] for year in year_table ]
-    # now get the average
-    sum = 0.0
-    for r in all_years:
-        sum += r
-    return sum / len(all_years)
+    return [ year_table[year][month] for year in year_table ]
+
+def find_average(year_table, month) :
+    all_years = get_all_years(year_table, month)
+    total = sum(all_years)
+    return total / len(all_years)
+
+def find_min(year_table, month) :
+    return min(get_all_years(year_table, month))
+
+def find_max(year_table, month) :
+    return max(get_all_years(year_table, month))
+
+def get_minimums(year_table):
+    months = []
+    for i in range(12):
+        months.append(find_min(year_table, i))
+    return months
+
+def get_maximums(year_table):
+    months = []
+    for i in range(12):
+        months.append(find_max(year_table, i))
+    return months
 
 def get_averages(year_table):
     months = []
@@ -102,6 +120,8 @@ while done == False:
     elif choice == '3':
         pylab.figure("Monthly Rainfall Averages")
         pylab.plot(range(len(month_strings)), get_averages(year_table))
+        pylab.plot(range(len(month_strings)), get_minimums(year_table))
+        pylab.plot(range(len(month_strings)), get_maximums(year_table))
         pylab.xticks(range(len(month_strings)), month_strings, size='small')
         pylab.ylabel('Rainfall (inches)')
         pylab.show()
