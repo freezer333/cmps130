@@ -13,6 +13,7 @@ Extend your program to let the user request any of the following, by presenting 
 <div class="highlight">** Reminder -  ** you learn by *doing* not watching.  Do this program yourself first!  Then watch how I did it!</div>
 
 ### Solution Video
+<iframe width="420" height="315" src="https://www.youtube.com/embed/yCA568PxoeM" frameborder="0" allowfullscreen></iframe>
 
 ### Solution Code
 [pe26.py](pe26.py)
