@@ -17,6 +17,14 @@ This course covers common computational approaches to solving scientific problem
 
 The course is specifically geared towards students with high aptitude in math, science, and critical thinking.  Previous programming experience is recommended, but not required.  The course will provide sufficient introduction to computer programming to the non-major, previous course work in computer science is not required.  The course’s emphasis on numerical problem solving and data analysis, along with the introduction to the Python programming language, makes it a relevant and valuable course for computer science majors at the sophomore/junior level and for science students wishing to learn how programming can help them in their fields.
 
+## Welecome Video and Syllabus Overview
+<video width="420" height="315" controls poster="http://pages.ramapo.edu/~sfrees/courses/cmps130/welcome.jpg">
+  <source src="http://pages.ramapo.edu/~sfrees/courses/cmps130/welcome.mp4" type="video/mp4">
+  Your browser does not support the video tag.  This video can also be viewed on YouTube <a href="https://youtu.be/z10QvnElMB4">here</a>
+</video>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/NCl09PRSepc" frameborder="0" allowfullscreen></iframe>
+
 ## Online Course Delivery
 **This course is online, and asynchronous - meaning you can access course material at any time.**While all modules/assignments are accessible from this site, we will use [moodle](http://moodle.ramapo.edu/) to submit all programming assignments electronically.  **Please review the college's guide to online courses and moodle [here](http://www.ramapo.edu/summer/online/)**.
 
@@ -96,7 +104,7 @@ The Mid Term exam (see proctoring details below in exam section) will include up
 
 
 ## Homework
-There are four assigned homework problems, with due dates listed on moodle (and below).  Homework programs will likely require 3-6 hours of your time, and will be more involved and complex than your lab assignments.  I will provide more detailed feedback on homework, and grading will be more discerning.  Homework programs 20% of your semester grade, each being 5%.  Like labs, no late homework will be accepted.
+There are four assigned homework problems, with due dates listed on moodle (and below).  Homework programs will likely require 3-6 hours of your time, and will be more involved and complex than the non-graded programming exercises.  I will provide feedback on homework, and partial credit will be given.  Homework programs 20% of your semester grade, each being 5%.  **No late homework will be accepted.**
 
 |Link to Homework Assignment| Due Date 
 |--|----
