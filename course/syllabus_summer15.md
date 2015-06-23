@@ -23,7 +23,10 @@ The course is specifically geared towards students with high aptitude in math, s
   Your browser does not support the video tag.  This video can also be viewed on YouTube <a href="https://youtu.be/z10QvnElMB4">here</a>
 </video>
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/NCl09PRSepc" frameborder="0" allowfullscreen></iframe>
+<video width="420" height="315" controls>
+  <source src="http://pages.ramapo.edu/~sfrees/courses/cmps130/syllabus.mp4" type="video/mp4">
+  Your browser does not support the video tag.  This video can also be viewed on YouTube <a href="https://youtu.be/NCl09PRSepc">here</a>
+</video>
 
 ## Online Course Delivery
 **This course is online, and asynchronous - meaning you can access course material at any time.**While all modules/assignments are accessible from this site, we will use [moodle](http://moodle.ramapo.edu/) to submit all programming assignments electronically.  **Please review the college's guide to online courses and moodle [here](http://www.ramapo.edu/summer/online/)**.
